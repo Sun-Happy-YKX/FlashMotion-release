@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "repo_id": "yangkaixing/FlashMotion-data",
+  "repo_type": "dataset",
+  "private": true,
+  "stage_root": "/safe/FlashMotion-data-stage",
+  "files": [
+    {
+      "path": "s2g/cache-exact-part-001.tar",
+      "local_path": "s2g/cache-exact-part-001.tar",
+      "sha256": "6d64220d461198010dafb18f0ee1c26c9219660334bbbcc1a360165d77ddce33",
+      "bytes": 1795676160
+    },
+    {
+      "path": "s2g/cache-exact-part-002.tar",
+      "local_path": "s2g/cache-exact-part-002.tar",
+      "sha256": "1b070ad8558aff78523f78c31ecd9eb003dcaf58a1bdf7d642ddb5550dd2d12b",
+      "bytes": 1792512000
+    },
+    {
+      "path": "s2g/cache-exact-part-003.tar",
+      "local_path": "s2g/cache-exact-part-003.tar",
+      "sha256": "2743b15f84ca596f5cafa500ccb6cfc87efee06211ef570a11efac6a494af717",
+      "bytes": 1797181440
+    },
+    {
+      "path": "s2g/cache-exact-part-004.tar",
+      "local_path": "s2g/cache-exact-part-004.tar",
+      "sha256": "302d631d3293a61e4638ac86a40f7d5bac93ed09b9c32357196a2e0db1e6c8db",
+      "bytes": 1799741440
+    },
+    {
+      "path": "s2g/cache-exact-part-005.tar",
+      "local_path": "s2g/cache-exact-part-005.tar",
+      "sha256": "f216968893693cb8288bf87b45101542a1e24d7e648500a15835e9ddcdd88a41",
+      "bytes": 1795194880
+    },
+    {
+      "path": "s2g/cache-exact-part-006.tar",
+      "local_path": "s2g/cache-exact-part-006.tar",
+      "sha256": "4b24bca7c43b904d4c83de063689a3a91643f880aca709fbe43f04e8a60acc1f",
+      "bytes": 526612480
+    },
+    {
+      "path": "s2g/cache-exact-members.json",
+      "local_path": "s2g/cache-exact-members.json",
+      "sha256": "9cd707880fd2bd620c009c9048fb1b5a78adbb6dec0a80251aa2ac7be1376565",
+      "bytes": 385675
+    }
+  ]
+}

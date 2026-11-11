@@ -1,0 +1,911 @@
+{
+  "schema": "flashmotion.frozen_source_collection.v1",
+  "files": [
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/EDGE.py",
+      "sha256": "e7d9c40530e2e135afb02f2008135972dfea0ded9f433134b47eb647cf41d444",
+      "bytes": 18439,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/EDGE.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/args.py",
+      "sha256": "f82be95461bed28b51a38240b13dbe50294f4ca84a986fcef820dfd605014137",
+      "bytes": 5078,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/args.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/audit_babel_protocol.py",
+      "sha256": "ced8a8f2544323c8e4773d15c52ad03495bcc71b3ca17c7c230279e3c0919c9e",
+      "bytes": 11057,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/audit_babel_protocol.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/audit_lengths.py",
+      "sha256": "b714b4f078b2e67c0c3690c2273a05ac4695cbef583e990ca8f323ab8aabd7ff",
+      "bytes": 1086,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/audit_lengths.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/build_babel_long_v2_report.py",
+      "sha256": "2cb78a5a4c8d432344365ba7714e82885015d6a2826b1b6e7d057fd550329d13",
+      "bytes": 10696,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/build_babel_long_v2_report.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/check_weighted_fid.py",
+      "sha256": "a4c3537368bd1ac3bb337bf502969579351e53f08ccae13de0d4ae36d6e620be",
+      "bytes": 1236,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/check_weighted_fid.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/combine_babel_protocol_shards.py",
+      "sha256": "c394bc5c4399f7c5c73a0b2effa20d8de1ab1d9e7049941ea77e9b6ea19939ab",
+      "bytes": 4556,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/combine_babel_protocol_shards.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/combine_flood_hml_paper_shards.py",
+      "sha256": "29661f0239287343bfe2e54f6d4343d3c1fdc72d0617b7da9d8accc75f4d146b",
+      "bytes": 1913,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/combine_flood_hml_paper_shards.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/combine_flooddiffusion_shards.py",
+      "sha256": "cfd9332f85a3dbf89f02af31fab1af8c312011a92937cdeb26d22f0fc9ff070f",
+      "bytes": 2928,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/combine_flooddiffusion_shards.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/compare_babel_protocols.py",
+      "sha256": "51cc1395eab8e3cd7426233f76187563e5381ab2c33c1734f010b39b790a3f59",
+      "bytes": 6660,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/compare_babel_protocols.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/compare_benchmark_shards.py",
+      "sha256": "39400e3f5220492089d0e9cf76a4a43f8303eb6c4f2915211231716494d8c508",
+      "bytes": 904,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/compare_benchmark_shards.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/compare_flood_fid_formula.py",
+      "sha256": "cc0ee7002fe5c23038c2b415083054bdbf311a16c71a918290804f08b01af92d",
+      "bytes": 942,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/compare_flood_fid_formula.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/dataset/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/dataset/__init__.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/dataset/dance_dataset.py",
+      "sha256": "c52cabab280d0f5f4b2bdc3a4cd03b3884e6c3fccc18be6b4e1d535666ae76ed",
+      "bytes": 12290,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/dataset/dance_dataset.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/dataset/masks.py",
+      "sha256": "4dddc7d380237bbb0b7680b4d9cd3e832d5795e7911c9a7621ea00775c988dd2",
+      "bytes": 2605,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/dataset/masks.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/dataset/motion_representation.py",
+      "sha256": "a6dc596328e769f4601dd391f6e56a069e55fb7ea5e1bbbf72ee923584b045c6",
+      "bytes": 3140,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/dataset/motion_representation.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/dataset/preprocess.py",
+      "sha256": "09b64e8fcb488b6acc4c26d5572628ed4c6bbed2d47b524729976eea8717681f",
+      "bytes": 2870,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/dataset/preprocess.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/dataset/quaternion.py",
+      "sha256": "480745a0dbc83493678dcb09fa34437cc6b9c0c75c089307db06504150be264f",
+      "bytes": 1753,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/dataset/quaternion.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/dataset/scaler.py",
+      "sha256": "a1a612556da9bb10494d4922d8386750b2ff91715054c03b942ea4c45a5d9296",
+      "bytes": 2633,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/dataset/scaler.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/diagnose_babel_jerk.py",
+      "sha256": "b2bf47c6938eaca56330c52a71e23b9acd961108a494d5bc92a1d2075e148b00",
+      "bytes": 5663,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/diagnose_babel_jerk.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/diagnose_flood_decode_jerk.py",
+      "sha256": "1bd580d1e3830bd6bd4bf4289da029c68384d06ce70c98f1d85aece673eeda13",
+      "bytes": 4289,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/diagnose_flood_decode_jerk.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/diagnose_flood_metric_protocols.py",
+      "sha256": "5327cf38b87fcd6b204464faa2396e99b76cbc643bb238a17a231fcfaf07ac3c",
+      "bytes": 2914,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/diagnose_flood_metric_protocols.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/evaluate_dart_babel_long.py",
+      "sha256": "fc795f52cc05119c21220f8910908d8e5cbd5c8704bfc361bb52f1469dae3386",
+      "bytes": 14862,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/evaluate_dart_babel_long.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/evaluate_flood_babel_long.py",
+      "sha256": "69a273fd95887891ea875953c216b3473bd9b1a2747f88ae9a33b0762e064daa",
+      "bytes": 8515,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/evaluate_flood_babel_long.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/evaluate_flood_babel_protocols.py",
+      "sha256": "6d9f7588e51d96687b334572bf46700f2f80430ab06fc81557fd56030f7e71a7",
+      "bytes": 13966,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/evaluate_flood_babel_protocols.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/evaluate_flood_hml_paper_shard.py",
+      "sha256": "290aad80a153dbee6d3c0154abc2777b5580982af88210b35df8c28f9afebf54",
+      "bytes": 7817,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/evaluate_flood_hml_paper_shard.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/evaluate_flooddiffusion_baseline.py",
+      "sha256": "d87d66aab3389f0d71e7d7cf973f26ae77a7db441cff58e4df2bf66d0093ff33",
+      "bytes": 8803,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/evaluate_flooddiffusion_baseline.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/evaluate_flower_babel_long.py",
+      "sha256": "003a0d43652f9b431a43ec90eed985369ae39b5ee42b9407223bbbd2656aea68",
+      "bytes": 8396,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/evaluate_flower_babel_long.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/evaluate_flower_babel_protocols.py",
+      "sha256": "2d39955c97dc501b0a8e132fd1319db42e085a9370ae405f550adf6382a2f3e9",
+      "bytes": 12074,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/evaluate_flower_babel_protocols.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/evaluate_flower_hml_paper.py",
+      "sha256": "f8942dac86a3c692147abf394debf63606dc2238c6f7abf9ec18a89078e6ad60",
+      "bytes": 9715,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/evaluate_flower_hml_paper.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/evaluate_flowmdm_babel_long.py",
+      "sha256": "4ff82913bfe591eb5a2a5788383c64e89331440b04fb1928d0696cbb27dbde5b",
+      "bytes": 12242,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/evaluate_flowmdm_babel_long.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/evaluate_t2m_ablation.py",
+      "sha256": "6717ac4706e36a4a3fee96156a4bf2f96261bcf154ecbb3a3a8bc9df015a6ccf",
+      "bytes": 15986,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/evaluate_t2m_ablation.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/evaluate_t2m_long.py",
+      "sha256": "9915d01aa7c4126d6589e926af633d01b5cf103da47cbc24b91dbebdf0b5f60d",
+      "bytes": 4250,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/evaluate_t2m_long.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/export_flood_babel_long_motions.py",
+      "sha256": "e73b66fcc54e5c0b2de4fa5aaa6a5c532c0236d43b89ca24ad218b97d96d410a",
+      "bytes": 4375,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/export_flood_babel_long_motions.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/export_gt_babel_long_motions.py",
+      "sha256": "eaac533c167239b02c16780b34e5640a4b359c751cc5ec7ca0feda5b4e428a6e",
+      "bytes": 2527,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/export_gt_babel_long_motions.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/generate_babel_selected_more.py",
+      "sha256": "978769545d121f6b3ea26c7c00f69bd0335b99a42cad2eaace0bae3f42664364",
+      "bytes": 7415,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/generate_babel_selected_more.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/generate_doubletake_babel_long.py",
+      "sha256": "bd75ecc6ca1aeb19082b729f41a2c4e4f20660c3880c0b61ad2c550b3839007f",
+      "bytes": 11687,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/generate_doubletake_babel_long.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/generate_flood_selected.py",
+      "sha256": "d277f5a1a197d8a261d9a14538847ef60ba4f32bf0e93de9b78bec54fb63eeb7",
+      "bytes": 3503,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/generate_flood_selected.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/generate_flower_babel_long_motions.py",
+      "sha256": "c82998b839f1b71131b862f6732e397978dd26c316713e2de88ef4354e2570e7",
+      "bytes": 5869,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/generate_flower_babel_long_motions.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/generate_motionstreamer_babel_long.py",
+      "sha256": "a1446a62de0cb5e1449bd224dc3ad5ac8e7b9e17370db8db48d06f081cadf83a",
+      "bytes": 7959,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/generate_motionstreamer_babel_long.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/generate_motius_babel_long.py",
+      "sha256": "8fbd59b2c7c28efd9cbb5caafcdbc30b5d70c7ea7e4a7648351e0074d10f8753",
+      "bytes": 11700,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/generate_motius_babel_long.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/inference.py",
+      "sha256": "749f5e14d48d8df08a6bbc6d84a52bd6e7ecc087343af97d787adb240d076ee4",
+      "bytes": 13470,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/inference.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/inpaint.py",
+      "sha256": "099093c595e0adeda5b8847e0f560fad5da3e2f50e51ed7b1fa25b251b3fdd90",
+      "bytes": 347,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/inpaint.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/inspect_benchmark_shards.py",
+      "sha256": "e2daca5da4659b9c41dc9f5cd908baf0dffff78628d2ec876a0f4440c1404858",
+      "bytes": 1812,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/inspect_benchmark_shards.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/model/adan.py",
+      "sha256": "37f6ce9446d613b8eefa99e360e82e9b92e3a8456584bd99bde8206d56c1327f",
+      "bytes": 3247,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/model/adan.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/model/cls.py",
+      "sha256": "a374f84b578674313152ec9b3a4000899baf48c57a0310e989d091f146110c73",
+      "bytes": 5004,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/model/cls.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/model/diffusion.py",
+      "sha256": "f9312b37f03b606ceacd20bdd157601bf8d78f31d51e6f244150cc4d9b94c737",
+      "bytes": 17604,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/model/diffusion.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/model/eval_pfc.py",
+      "sha256": "ff77cf2341a8b4e8570efb1cc5a33c4d273bec9b48543fac9562e4033ba0e6c5",
+      "bytes": 2049,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/model/eval_pfc.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/model/features/geometric.py",
+      "sha256": "c1adba569aa0e05912ef4a4edbfac92f7d087214ef7a2aca5834280a89722355",
+      "bytes": 13109,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/model/features/geometric.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/model/features/kinetic.py",
+      "sha256": "fa5452cd641d5a188e5103e6aa24198cbc88e5052a60eb42708aa29ee1165c13",
+      "bytes": 7426,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/model/features/kinetic.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/model/features/utils.py",
+      "sha256": "f66b92dd23551ca705d62aa74842d819d91e0b09f5933437bab9b13a91daebf8",
+      "bytes": 6615,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/model/features/utils.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/model/flowmatching.py",
+      "sha256": "e38915200fe9db493135e83d73ddb2c6481bd239ef926e21dc4db8b60c144913",
+      "bytes": 21226,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/model/flowmatching.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/model/metric.py",
+      "sha256": "8330fd5103f6b6abca50f16835ecfa719422041a46544ade49dbcf8260f16e92",
+      "bytes": 10765,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/model/metric.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/model/model.py",
+      "sha256": "eaa6b56527318940f36d6d86f7f860acbd7d183efec2bf6eb9e0c9c6f90c0579",
+      "bytes": 15766,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/model/model.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/model/rotary_embedding_torch.py",
+      "sha256": "f36b2812561d3db2acfb770784bfdd5f9867fd66a61e7dc0b202c343ebfcce6f",
+      "bytes": 3979,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/model/rotary_embedding_torch.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/model/utils.py",
+      "sha256": "6d3d4ade439051d014b3afb874fb190b216b8d0c2a32b302b457b3939f859a4d",
+      "bytes": 3501,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/model/utils.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/precompute_t2m_text.py",
+      "sha256": "80f4b5af14242854f8c98ca9ff1da6921c7af94e37019be170f00af936ce3a36",
+      "bytes": 4210,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/precompute_t2m_text.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/prepare_canonical_data.py",
+      "sha256": "ebe66b65b6746fd93cc2a50973af57f7f1e38546fc56a89512b57c352092f4a5",
+      "bytes": 4734,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/prepare_canonical_data.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/recompute_babel_pj_auj.py",
+      "sha256": "a9cd0157b79e8b11f2c271ad40e6ab1b1d10eb141c7e62d4dda064cf60c25fe1",
+      "bytes": 3182,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/recompute_babel_pj_auj.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/render_babel_fourway.py",
+      "sha256": "6d7c05d3fc3c5a9acd25d8fd3305155a858a470f325776c1c2bcc3389fb2aa70",
+      "bytes": 5275,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/render_babel_fourway.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/render_babel_long_v2_comparisons.py",
+      "sha256": "fc5329e823086457f331c51e3791b8666a942ddd25de48424ccfde6b4f152826",
+      "bytes": 12033,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/render_babel_long_v2_comparisons.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/repeat_flood_hml_metrics.py",
+      "sha256": "b574e31bc5ed63a1784c59a1b32275bfd1cf9b0f51a48e1663baaf9557f23e33",
+      "bytes": 2210,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/repeat_flood_hml_metrics.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/score_babel_long.py",
+      "sha256": "7bed4d884ca3c9a28bdaa70cbabd1ed1748813748d72d908d577ce8d61bdf3b0",
+      "bytes": 9494,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/score_babel_long.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/score_common_long.py",
+      "sha256": "e8f1a7fe6a8a41d52e6e837fd7089b6815f020bb77d18f7ea317391cd8138f29",
+      "bytes": 3121,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/score_common_long.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/score_dart_long.py",
+      "sha256": "e3bdb45c43d5ad4502c4313d25f56c7f0e44ea82f79c6dd219e904b353ffdc20",
+      "bytes": 1361,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/score_dart_long.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/score_flower_partial.py",
+      "sha256": "bff02a37ec786d06b8156cf495821cde543eb72b0107c75413fc819934a6ff31",
+      "bytes": 1284,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/score_flower_partial.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/score_flowmdm_long.py",
+      "sha256": "1930fdb45dd10e547beda9ee2c2508dd7c61c1e90a0df9775253fb00e250569c",
+      "bytes": 1472,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/score_flowmdm_long.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/score_motion_archives_babel_long.py",
+      "sha256": "64504f8d3bf2728e9a8c293dd74d97d889c987b6e0640cbb5de9af27b48a97af",
+      "bytes": 7762,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/score_motion_archives_babel_long.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/scripts/launch_t2m_ablation_4gpu.sh",
+      "sha256": "33968b69d11d5fcb28bf41f8b3729947ef54fcde124648c13ae4f9c83bb98c77",
+      "bytes": 1991,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/scripts/launch_t2m_ablation_4gpu.sh"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/scripts/launch_t2m_long_4gpu.sh",
+      "sha256": "60271fe3ada429d5f67b9ee777a3c36f74c8bb4b7fb8dcf985a0e87da16ef874",
+      "bytes": 1004,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/scripts/launch_t2m_long_4gpu.sh"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/scripts/launch_t2m_tr_only_adain_4gpu.sh",
+      "sha256": "6e54ada8127aea25ffc274cc83bc013d5126daec5f9cb0f28c4d4303d5a60d02",
+      "bytes": 1776,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/scripts/launch_t2m_tr_only_adain_4gpu.sh"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/scripts/launch_t2m_tr_only_adain_condition_mamba_4gpu.sh",
+      "sha256": "ff490dd9214302e92b974c6811df7c285dc297e99f515c5786be2644d57338ee",
+      "bytes": 2065,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/scripts/launch_t2m_tr_only_adain_condition_mamba_4gpu.sh"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/scripts/launch_t2m_tr_only_factorial_4gpu.sh",
+      "sha256": "74314e6981993e7e4f103cfc24b7433c429547bcfbe0f725dab89d7ccff53243",
+      "bytes": 2463,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/scripts/launch_t2m_tr_only_factorial_4gpu.sh"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/scripts/queue_t2m_ablation_lane.sh",
+      "sha256": "64ed620f3dc819a3c1b48ea6e9363013d43958e467b940e5ca2bba197ff0fc1b",
+      "bytes": 1414,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/scripts/queue_t2m_ablation_lane.sh"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/scripts/queue_t2m_after_dance_sixth.sh",
+      "sha256": "221972411b1ad49388671952223be2b1fe7f26b19da876f814ea0b2359a20c09",
+      "bytes": 422,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/scripts/queue_t2m_after_dance_sixth.sh"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/scripts/run_t2m_factorial_backlog.sh",
+      "sha256": "7e8d23688bb0817737518c88664054cc8161ed88c72d3ee7f1c56068a2475e23",
+      "bytes": 2084,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/scripts/run_t2m_factorial_backlog.sh"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/scripts/smoke_condition_mamba.py",
+      "sha256": "b00d2f4410b1f6293f7bb415a1b3831fe6cca62ee96001127ccae87d8e8adeb0",
+      "bytes": 1132,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/scripts/smoke_condition_mamba.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/scripts/smoke_cross_modal_adain.py",
+      "sha256": "4c6ea9f237961c4579f61fb0cc30b187845ea3cad5f8a1bfa4b5bc37621f7dc9",
+      "bytes": 1805,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/scripts/smoke_cross_modal_adain.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/scripts/watch_t2m_ablation_eval.sh",
+      "sha256": "410cf1fdcebcdb4ee4106842401a2e94fba6879165dc2a230542728d857b1781",
+      "bytes": 2922,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/scripts/watch_t2m_ablation_eval.sh"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/select_babel_long_v2_cases.py",
+      "sha256": "fd668f23a5f9e4c6fd71a71e5ca804e75ed8c61802a3b19db2a4edb65e3c080c",
+      "bytes": 6013,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/select_babel_long_v2_cases.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/smoke_train_step.py",
+      "sha256": "ebb9b25ac6a0420d8e9150140cb47d4503754c17ed64ea80639b3c6beaefe27b",
+      "bytes": 3472,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/smoke_train_step.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/summarize_t2m_factorial.py",
+      "sha256": "2f55e17aad031219d471b15f774231602e0c345e4369fbd70c00eeab2512ffdc",
+      "bytes": 5874,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/summarize_t2m_factorial.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/t2m_long/__init__.py",
+      "sha256": "484f1ce17ffffad251cc9c32a1390c7c0c52619def0abf8c4951c83201775398",
+      "bytes": 69,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/t2m_long/__init__.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/t2m_long/babel_long_benchmark.py",
+      "sha256": "e1636ec320e3bd430a0ca6e988483ca9edfc4cff2b2747db8bb6abbf2850f68c",
+      "bytes": 13767,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/t2m_long/babel_long_benchmark.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/t2m_long/babel_protocol.py",
+      "sha256": "7307ef9009c10e8c256b9dd09e3ef65b7139f3e82e4ab2c40e3e7b2beedccb1e",
+      "bytes": 2329,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/t2m_long/babel_protocol.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/t2m_long/data.py",
+      "sha256": "f8445c01dc83c7e69580f9c9bf9afd68fa4477f2b419653f06d95e5d4215c5ce",
+      "bytes": 7704,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/t2m_long/data.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/t2m_long/evaluator.py",
+      "sha256": "a9f94ffedbf0be42e02051bc6b9c0af8285bb453305fbee412cfbbd79de770f9",
+      "bytes": 8585,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/t2m_long/evaluator.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/t2m_long/meanflow.py",
+      "sha256": "d84e169b6f7bb03ab854ebc3915f275d070adb2bad0165ffc5e196f4537835e9",
+      "bytes": 20921,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/t2m_long/meanflow.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/t2m_long/model.py",
+      "sha256": "d7152c07d794770329bc97d4b9948af92c7d4e1b6ef012cd92d50717594d7833",
+      "bytes": 2589,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/t2m_long/model.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/t2m_long/motion_archive.py",
+      "sha256": "3634b8ea212e1d6eb339d6fd9821e672df9ac6c03993f253222ef1dfae6612df",
+      "bytes": 4600,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/t2m_long/motion_archive.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/t2m_long/representation.py",
+      "sha256": "063c76f7da5691c6e8470f1ad1e5a10d1b982fbd0ad0e4c6831a9cbafe0cfc24",
+      "bytes": 2442,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/t2m_long/representation.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/test.py",
+      "sha256": "170a82aa5fb654e868847df332f4d9dc5368dece103d42b6b301369a1464ac5a",
+      "bytes": 569,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/test.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/test_floor_loss.py",
+      "sha256": "4aa64ab44ce9ba56abf3c86544be966d4e7ab57f25edb7deed4bda98969796c3",
+      "bytes": 2619,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/test_floor_loss.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/train.py",
+      "sha256": "c882e6f8f14282796acc6034ca98a90e6f9f48add007a0192a648d7d2bfb208c",
+      "bytes": 828,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/train.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/train_t2m_long.py",
+      "sha256": "d98c6e5ab18f61985f18de74a77e8de4d9ddf81da0800f2fc091f5f0b40d6e4f",
+      "bytes": 12209,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/train_t2m_long.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/validate_babel_gt_retrieval.py",
+      "sha256": "1e7a74a9973f380aba92a48af9df61a896c000e5734461f6cf8b86fb4bb6fc62",
+      "bytes": 4908,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/validate_babel_gt_retrieval.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/code/vis.py",
+      "sha256": "87f4bbe16ab29dba27e1feea067187949a181ad83888402b9dd8f9b578b4a3db",
+      "bytes": 10300,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code/vis.py"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/provenance/manifest.json",
+      "sha256": "c25678a56f1519582f705d129b86bf51221f79fe35e038c5acb471141e02620d",
+      "bytes": 4621,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/manifest.json"
+    },
+    {
+      "path": "tasks/t2m/snapshots/restart_20260922/provenance/source_sha256.json",
+      "sha256": "982db9eaabe914bfb4c09c9a3bd7bdd266156391ddfbee52e46688f5d5c6a567",
+      "bytes": 9742,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/source_sha256.json"
+    },
+    {
+      "path": "tasks/s2g/snapshots/full55_r2/code/baselines.template.json",
+      "sha256": "b42da97e47b8bb302c4b49e368d9d48775d888f08d112e16d29ca8f36e638077",
+      "bytes": 5912,
+      "source": "/efs/yangkaixing/music2gesture_semtalk_20261007_r1/code_r2/baselines.template.json"
+    },
+    {
+      "path": "tasks/s2g/snapshots/full55_r2/code/config.target.json",
+      "sha256": "512f7c15118fb8afa66227038aba38c129a045d321e4a30eefa24dc7366af4f1",
+      "bytes": 3874,
+      "source": "/efs/yangkaixing/music2gesture_semtalk_20261007_r1/code_r2/config.target.json"
+    },
+    {
+      "path": "tasks/s2g/snapshots/full55_r2/code/controller.py",
+      "sha256": "6b699f302a67738f4ece7324f5f0d34ebb428417267d35abe6ecb64cf4357476",
+      "bytes": 15308,
+      "source": "/efs/yangkaixing/music2gesture_semtalk_20261007_r1/code_r2/controller.py"
+    },
+    {
+      "path": "tasks/s2g/snapshots/full55_r2/code/data.py",
+      "sha256": "69cc7068acf59c3368dd4fab34c702d3492bf4bd50f95bc30fcb6d6ca0a7b8d2",
+      "bytes": 10794,
+      "source": "/efs/yangkaixing/music2gesture_semtalk_20261007_r1/code_r2/data.py"
+    },
+    {
+      "path": "tasks/s2g/snapshots/full55_r2/code/evaluation.py",
+      "sha256": "0176aefad9d5c41ebfe735f307588c2c8e35861826fadfe4f5bf7615f51c0a38",
+      "bytes": 41727,
+      "source": "/efs/yangkaixing/music2gesture_semtalk_20261007_r1/code_r2/evaluation.py"
+    },
+    {
+      "path": "tasks/s2g/snapshots/full55_r2/code/loss.py",
+      "sha256": "49edd93abc156d16040e4bc4f074fa5dbcc68444e8b0930f2716ba5bef871221",
+      "bytes": 18477,
+      "source": "/efs/yangkaixing/music2gesture_semtalk_20261007_r1/code_r2/loss.py"
+    },
+    {
+      "path": "tasks/s2g/snapshots/full55_r2/code/model.py",
+      "sha256": "a7cf7ec181b90616fba77845cee13c5f8d47996cea56c325ad7ed535c2941348",
+      "bytes": 17309,
+      "source": "/efs/yangkaixing/music2gesture_semtalk_20261007_r1/code_r2/model.py"
+    },
+    {
+      "path": "tasks/s2g/snapshots/full55_r2/code/native_higherorder_jvp.py",
+      "sha256": "bee94aa93f1311d2314b3a89012c92a707fe4919113ef55fcaf6713e708a18c2",
+      "bytes": 32596,
+      "source": "/efs/yangkaixing/music2gesture_semtalk_20261007_r1/code_r2/native_higherorder_jvp.py"
+    },
+    {
+      "path": "tasks/s2g/snapshots/full55_r2/code/native_jvp_check.py",
+      "sha256": "fe34815f00caa865a6d7612719d7117e562ac9001f88f8e0d44ad1dcca9fe488",
+      "bytes": 49628,
+      "source": "/efs/yangkaixing/music2gesture_semtalk_20261007_r1/code_r2/native_jvp_check.py"
+    },
+    {
+      "path": "tasks/s2g/snapshots/full55_r2/code/paper_table.json",
+      "sha256": "6c783277f30db51f592b0caddfe8e39a1a662d131e00b8cf95e8b53258a95c20",
+      "bytes": 2530,
+      "source": "/efs/yangkaixing/music2gesture_semtalk_20261007_r1/code_r2/paper_table.json"
+    },
+    {
+      "path": "tasks/s2g/snapshots/full55_r2/code/prepare.py",
+      "sha256": "cb5d3463ccd58e46d978d58abf5e986810e7977eab095e6cfe3b127d5bff858b",
+      "bytes": 22621,
+      "source": "/efs/yangkaixing/music2gesture_semtalk_20261007_r1/code_r2/prepare.py"
+    },
+    {
+      "path": "tasks/s2g/snapshots/full55_r2/code/render.py",
+      "sha256": "0f757469f7d22e9f65c2ff84ef4de5e09b07a17edc01c2110dc7556a95c854ac",
+      "bytes": 16438,
+      "source": "/efs/yangkaixing/music2gesture_semtalk_20261007_r1/code_r2/render.py"
+    },
+    {
+      "path": "tasks/s2g/snapshots/full55_r2/code/render_review.py",
+      "sha256": "8309f7ebe1725aa4fcae0da6d2425334ff80419bab82f4c9905b5a5b5512c69d",
+      "bytes": 10770,
+      "source": "/efs/yangkaixing/music2gesture_semtalk_20261007_r1/code_r2/render_review.py"
+    },
+    {
+      "path": "tasks/s2g/snapshots/full55_r2/code/train.py",
+      "sha256": "a3e649d2707387ebae4855bf562a541b61d1052bacaa68a2380c765c827e3d73",
+      "bytes": 97518,
+      "source": "/efs/yangkaixing/music2gesture_semtalk_20261007_r1/code_r2/train.py"
+    },
+    {
+      "path": "tasks/s2g/snapshots/full55_r2/code/verify.py",
+      "sha256": "72b411729af1956094da31c25fd062428e8571142c635b40a732bf28406298f3",
+      "bytes": 15669,
+      "source": "/efs/yangkaixing/music2gesture_semtalk_20261007_r1/code_r2/verify.py"
+    },
+    {
+      "path": "tasks/m2d/snapshots/genre_20260929/code/EDGE.py",
+      "sha256": "faf19a1700e32de63b0c1ecdb81b4b76b604fa90e6d1ad0687bd46dbfa9a0335",
+      "bytes": 19779,
+      "source": "/efs/yangkaixing/FlowerDance_x0_ablation/runs/music_genre_ablation_20260929/code/EDGE.py"
+    },
+    {
+      "path": "tasks/m2d/snapshots/genre_20260929/code/args.py",
+      "sha256": "a0b404b9609fb631f61e75f37673882767e7383ae421900ecff99354e2381358",
+      "bytes": 6192,
+      "source": "/efs/yangkaixing/FlowerDance_x0_ablation/runs/music_genre_ablation_20260929/code/args.py"
+    },
+    {
+      "path": "tasks/m2d/snapshots/genre_20260929/code/audit_time_conditioning.py",
+      "sha256": "81b21b20c179e1162ae1bdf3850a1188654451bc2d5936802eaa443140424924",
+      "bytes": 2039,
+      "source": "/efs/yangkaixing/FlowerDance_x0_ablation/runs/music_genre_ablation_20260929/code/audit_time_conditioning.py"
+    },
+    {
+      "path": "tasks/m2d/snapshots/genre_20260929/code/dataset/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "source": "/efs/yangkaixing/FlowerDance_x0_ablation/runs/music_genre_ablation_20260929/code/dataset/__init__.py"
+    },
+    {
+      "path": "tasks/m2d/snapshots/genre_20260929/code/dataset/dance_dataset.py",
+      "sha256": "c52cabab280d0f5f4b2bdc3a4cd03b3884e6c3fccc18be6b4e1d535666ae76ed",
+      "bytes": 12290,
+      "source": "/efs/yangkaixing/FlowerDance_x0_ablation/runs/music_genre_ablation_20260929/code/dataset/dance_dataset.py"
+    },
+    {
+      "path": "tasks/m2d/snapshots/genre_20260929/code/dataset/masks.py",
+      "sha256": "4dddc7d380237bbb0b7680b4d9cd3e832d5795e7911c9a7621ea00775c988dd2",
+      "bytes": 2605,
+      "source": "/efs/yangkaixing/FlowerDance_x0_ablation/runs/music_genre_ablation_20260929/code/dataset/masks.py"
+    },
+    {
+      "path": "tasks/m2d/snapshots/genre_20260929/code/dataset/motion_representation.py",
+      "sha256": "a6dc596328e769f4601dd391f6e56a069e55fb7ea5e1bbbf72ee923584b045c6",
+      "bytes": 3140,
+      "source": "/efs/yangkaixing/FlowerDance_x0_ablation/runs/music_genre_ablation_20260929/code/dataset/motion_representation.py"
+    },
+    {
+      "path": "tasks/m2d/snapshots/genre_20260929/code/dataset/preprocess.py",
+      "sha256": "09b64e8fcb488b6acc4c26d5572628ed4c6bbed2d47b524729976eea8717681f",
+      "bytes": 2870,
+      "source": "/efs/yangkaixing/FlowerDance_x0_ablation/runs/music_genre_ablation_20260929/code/dataset/preprocess.py"
+    },
+    {
+      "path": "tasks/m2d/snapshots/genre_20260929/code/dataset/quaternion.py",
+      "sha256": "480745a0dbc83493678dcb09fa34437cc6b9c0c75c089307db06504150be264f",
+      "bytes": 1753,
+      "source": "/efs/yangkaixing/FlowerDance_x0_ablation/runs/music_genre_ablation_20260929/code/dataset/quaternion.py"
+    },
+    {
+      "path": "tasks/m2d/snapshots/genre_20260929/code/dataset/scaler.py",
+      "sha256": "a1a612556da9bb10494d4922d8386750b2ff91715054c03b942ea4c45a5d9296",
+      "bytes": 2633,
+      "source": "/efs/yangkaixing/FlowerDance_x0_ablation/runs/music_genre_ablation_20260929/code/dataset/scaler.py"
+    },
+    {
+      "path": "tasks/m2d/snapshots/genre_20260929/code/inference.py",
+      "sha256": "749f5e14d48d8df08a6bbc6d84a52bd6e7ecc087343af97d787adb240d076ee4",
+      "bytes": 13470,
+      "source": "/efs/yangkaixing/FlowerDance_x0_ablation/runs/music_genre_ablation_20260929/code/inference.py"
+    },
+    {
+      "path": "tasks/m2d/snapshots/genre_20260929/code/inpaint.py",
+      "sha256": "099093c595e0adeda5b8847e0f560fad5da3e2f50e51ed7b1fa25b251b3fdd90",
+      "bytes": 347,
+      "source": "/efs/yangkaixing/FlowerDance_x0_ablation/runs/music_genre_ablation_20260929/code/inpaint.py"
+    },
+    {
+      "path": "tasks/m2d/snapshots/genre_20260929/code/model/adan.py",
+      "sha256": "37f6ce9446d613b8eefa99e360e82e9b92e3a8456584bd99bde8206d56c1327f",
+      "bytes": 3247,
+      "source": "/efs/yangkaixing/FlowerDance_x0_ablation/runs/music_genre_ablation_20260929/code/model/adan.py"
+    },
+    {
+      "path": "tasks/m2d/snapshots/genre_20260929/code/model/cls.py",
+      "sha256": "a374f84b578674313152ec9b3a4000899baf48c57a0310e989d091f146110c73",
+      "bytes": 5004,
+      "source": "/efs/yangkaixing/FlowerDance_x0_ablation/runs/music_genre_ablation_20260929/code/model/cls.py"
+    },
+    {
+      "path": "tasks/m2d/snapshots/genre_20260929/code/model/diffusion.py",
+      "sha256": "f9312b37f03b606ceacd20bdd157601bf8d78f31d51e6f244150cc4d9b94c737",
+      "bytes": 17604,
+      "source": "/efs/yangkaixing/FlowerDance_x0_ablation/runs/music_genre_ablation_20260929/code/model/diffusion.py"
+    },
+    {
+      "path": "tasks/m2d/snapshots/genre_20260929/code/model/eval_pfc.py",
+      "sha256": "ff77cf2341a8b4e8570efb1cc5a33c4d273bec9b48543fac9562e4033ba0e6c5",
+      "bytes": 2049,
+      "source": "/efs/yangkaixing/FlowerDance_x0_ablation/runs/music_genre_ablation_20260929/code/model/eval_pfc.py"
+    },
+    {
+      "path": "tasks/m2d/snapshots/genre_20260929/code/model/features/geometric.py",
+      "sha256": "c1adba569aa0e05912ef4a4edbfac92f7d087214ef7a2aca5834280a89722355",
+      "bytes": 13109,
+      "source": "/efs/yangkaixing/FlowerDance_x0_ablation/runs/music_genre_ablation_20260929/code/model/features/geometric.py"
+    },
+    {
+      "path": "tasks/m2d/snapshots/genre_20260929/code/model/features/kinetic.py",
+      "sha256": "fa5452cd641d5a188e5103e6aa24198cbc88e5052a60eb42708aa29ee1165c13",
+      "bytes": 7426,
+      "source": "/efs/yangkaixing/FlowerDance_x0_ablation/runs/music_genre_ablation_20260929/code/model/features/kinetic.py"
+    },
+    {
+      "path": "tasks/m2d/snapshots/genre_20260929/code/model/features/utils.py",
+      "sha256": "f66b92dd23551ca705d62aa74842d819d91e0b09f5933437bab9b13a91daebf8",
+      "bytes": 6615,
+      "source": "/efs/yangkaixing/FlowerDance_x0_ablation/runs/music_genre_ablation_20260929/code/model/features/utils.py"
+    },
+    {
+      "path": "tasks/m2d/snapshots/genre_20260929/code/model/flowmatching.py",
+      "sha256": "6da8bfb07d16321dfd44252540f7e6fb1730f0c3cbb032281d9f6381edc8e2e1",
+      "bytes": 28276,
+      "source": "/efs/yangkaixing/FlowerDance_x0_ablation/runs/music_genre_ablation_20260929/code/model/flowmatching.py"
+    },
+    {
+      "path": "tasks/m2d/snapshots/genre_20260929/code/model/metric.py",
+      "sha256": "8330fd5103f6b6abca50f16835ecfa719422041a46544ade49dbcf8260f16e92",
+      "bytes": 10765,
+      "source": "/efs/yangkaixing/FlowerDance_x0_ablation/runs/music_genre_ablation_20260929/code/model/metric.py"
+    },
+    {
+      "path": "tasks/m2d/snapshots/genre_20260929/code/model/model.py",
+      "sha256": "80e8144fed0015a3c860ddee81988e4ed211cef5fb452fa93a59b65ce4485b42",
+      "bytes": 14412,
+      "source": "/efs/yangkaixing/FlowerDance_x0_ablation/runs/music_genre_ablation_20260929/code/model/model.py"
+    },
+    {
+      "path": "tasks/m2d/snapshots/genre_20260929/code/model/rotary_embedding_torch.py",
+      "sha256": "f36b2812561d3db2acfb770784bfdd5f9867fd66a61e7dc0b202c343ebfcce6f",
+      "bytes": 3979,
+      "source": "/efs/yangkaixing/FlowerDance_x0_ablation/runs/music_genre_ablation_20260929/code/model/rotary_embedding_torch.py"
+    },
+    {
+      "path": "tasks/m2d/snapshots/genre_20260929/code/model/utils.py",
+      "sha256": "6d3d4ade439051d014b3afb874fb190b216b8d0c2a32b302b457b3939f859a4d",
+      "bytes": 3501,
+      "source": "/efs/yangkaixing/FlowerDance_x0_ablation/runs/music_genre_ablation_20260929/code/model/utils.py"
+    },
+    {
+      "path": "tasks/m2d/snapshots/genre_20260929/code/prepare_canonical_data.py",
+      "sha256": "ebe66b65b6746fd93cc2a50973af57f7f1e38546fc56a89512b57c352092f4a5",
+      "bytes": 4734,
+      "source": "/efs/yangkaixing/FlowerDance_x0_ablation/runs/music_genre_ablation_20260929/code/prepare_canonical_data.py"
+    },
+    {
+      "path": "tasks/m2d/snapshots/genre_20260929/code/smoke_train_step.py",
+      "sha256": "ea426e9929afbf5d6b71571738eb42e1334b505569bf7f284fc375272269bf6f",
+      "bytes": 3619,
+      "source": "/efs/yangkaixing/FlowerDance_x0_ablation/runs/music_genre_ablation_20260929/code/smoke_train_step.py"
+    },
+    {
+      "path": "tasks/m2d/snapshots/genre_20260929/code/test.py",
+      "sha256": "ad80d860176f6cc530c0102664333af46b2be009ad88d2c4fcfc777d4a350e15",
+      "bytes": 720,
+      "source": "/efs/yangkaixing/FlowerDance_x0_ablation/runs/music_genre_ablation_20260929/code/test.py"
+    },
+    {
+      "path": "tasks/m2d/snapshots/genre_20260929/code/train.py",
+      "sha256": "b684a17d5b572ab8f49cbadd7eff76d779cd7e2eb3a5faa52630a5966aa54a42",
+      "bytes": 979,
+      "source": "/efs/yangkaixing/FlowerDance_x0_ablation/runs/music_genre_ablation_20260929/code/train.py"
+    },
+    {
+      "path": "tasks/m2d/snapshots/genre_20260929/code/train_pair.py",
+      "sha256": "03f1a2f6dc276c3aad600600fa29db3b5ca2c5d02b415773cb70c355a4ceb1b9",
+      "bytes": 9011,
+      "source": "/efs/yangkaixing/FlowerDance_x0_ablation/runs/music_genre_ablation_20260929/code/train_pair.py"
+    },
+    {
+      "path": "tasks/m2d/snapshots/genre_20260929/code/vis.py",
+      "sha256": "87f4bbe16ab29dba27e1feea067187949a181ad83888402b9dd8f9b578b4a3db",
+      "bytes": 10300,
+      "source": "/efs/yangkaixing/FlowerDance_x0_ablation/runs/music_genre_ablation_20260929/code/vis.py"
+    },
+    {
+      "path": "tasks/m2d/snapshots/genre_20260929/provenance/formal_code_sha256.json",
+      "sha256": "6cc03bf74bd5fc822e161fcadc31b3da4423ccff44b733a5bc72003ab19de93f",
+      "bytes": 2743,
+      "source": "/efs/yangkaixing/FlowerDance_x0_ablation/runs/music_genre_ablation_20260929/formal_code_sha256.json"
+    },
+    {
+      "path": "tasks/t2m/snapshots/full_selection_20260923/provenance/manifest.json",
+      "sha256": "5f0f9850a78070ac5e80af6028668e8d644f56c608c0f811f7db81b0f59333c1",
+      "bytes": 1212,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_adain_selection_8000ep_20260923/manifest.json"
+    },
+    {
+      "path": "tasks/m2d/snapshots/genre_20260929/provenance/full_control.py",
+      "sha256": "f91fd638c17cf0c255dd47caffea7c99771a8d5d6997e1bf32e9aa48e722cfeb",
+      "bytes": 2175,
+      "source": "/efs/yangkaixing/FlowerDance_x0_ablation/runs/music_genre_ablation_20260929/full_control.py"
+    },
+    {
+      "path": "tasks/m2d/snapshots/genre_20260929/provenance/music_corrected_eval_20260930.py",
+      "sha256": "bd28059623a1b00fc278e131f9664ae2fa78b9f4addec237d01c868c715dd3fb",
+      "bytes": 11016,
+      "source": "/efs/yangkaixing/FlowerDance_x0_ablation/runs/music_genre_ablation_20260929/music_corrected_eval_20260930.py"
+    },
+    {
+      "path": "tasks/t2m/evidence/main_reencoded/mixed_1step_e7150/metrics.json",
+      "sha256": "6f781383d104078b106545b95e7224d153ad4f0a9ae63bf5cddedd7fb482d627",
+      "bytes": 1737,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/eval/comparison_mixed_20260925/ours_reencoded/mixed_1step_e7150/metrics.json"
+    },
+    {
+      "path": "tasks/t2m/evidence/main_reencoded/mixed_4step_e5850/metrics.json",
+      "sha256": "654fadadcf49341411138c83ec2a04c17ab1bda4590d6f056a9a2b2c1d81d004",
+      "bytes": 1748,
+      "source": "/efs/yangkaixing/FlowerDance_T2M_Long/eval/comparison_mixed_20260925/ours_reencoded/mixed_4step_e5850/metrics.json"
+    },
+    {
+      "path": "tasks/t2m/reference/ours_reencode_20260925.py",
+      "sha256": "bff7bf408d22bb398ba75811a04b2d256ab7eb91912803b218be9cc9b171957c",
+      "bytes": 5800,
+      "source": "C:/Users/bubuyang/Documents/New project/_ours_reencode_20260925.py"
+    }
+  ]
+}

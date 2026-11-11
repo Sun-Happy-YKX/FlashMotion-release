@@ -1,0 +1,11 @@
+{
+  "schema": "flashmotion.owner_permission_record.v1",
+  "date": "2026-10-10",
+  "owner_confirmed_redistribution_permission": true,
+  "scope": "private HF delivery of required SMPL-X model and exact S2G cache",
+  "evidence": "Owner confirmation dated 2026-10-10; supporting permission document is not bundled.",
+  "underlying_permission_document_independently_reviewed": false,
+  "public_release_authorized": false,
+  "original_terms_retained": true,
+  "official_model_license": "https://smpl-x.is.tue.mpg.de/modellicense.html"
+}

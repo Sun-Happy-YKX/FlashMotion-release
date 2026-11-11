@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "description": "Linux path template. Replace paths and resource identities before use. Default: dry-run. --prepare creates a configured copy; eval --execute requires current runtime and input checks. Launch training through the generated controller.",
+  "task_id": "REPLACE_WITH_INDEPENDENT_RESOURCE_ID",
+  "expected_hostname": "REPLACE_WITH_INDEPENDENT_LINUX_HOSTNAME",
+  "release_root": "/opt/FlashMotion",
+  "python": "/opt/flashmotion-m2d/bin/python",
+  "data_root": "/datasets/FlashMotion-m2d",
+  "checkpoint_root": "/models/FlashMotion/m2d",
+  "output_root": "/work/flashmotion-m2d/independent-run",
+  "generated_code_root": "/work/flashmotion-m2d/independent-run/code",
+  "evaluation_output_root": "/work/flashmotion-m2d/independent-corrected-eval",
+  "asset_fetch_receipt": "/work/flashmotion-m2d/proofs/artifact-fetch.json",
+  "runtime_evidence": "/work/flashmotion-m2d/proofs/runtime.json",
+  "precheck_path": "/work/flashmotion-m2d/proofs/PRECHECK_PASSED.json",
+  "visible_devices": [
+    "0",
+    "1",
+    "2",
+    "3"
+  ],
+  "main_process_ports": {
+    "genre": 39974,
+    "no_genre": 39975
+  }
+}

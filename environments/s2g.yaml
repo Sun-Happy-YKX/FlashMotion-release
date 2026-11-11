@@ -1,0 +1,24 @@
+# Linux x86_64 bootstrap; pip runtime and native stages are in docs/environment.md.
+name: flashmotion-s2g
+channels:
+  - nvidia/label/cuda-12.8.0
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.10.12
+  - pip
+  - setuptools
+  - wheel
+  - git
+  - cmake
+  - make
+  - gcc_linux-64=12
+  - gxx_linux-64=12
+  - cuda-toolkit=12.8.0
+  - libsndfile
+  - ffmpeg
+variables:
+  OPENBLAS_CORETYPE: Haswell
+  OPENBLAS_NUM_THREADS: "1"
+  OMP_NUM_THREADS: "1"
+  MKL_NUM_THREADS: "1"

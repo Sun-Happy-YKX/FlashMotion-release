@@ -1,0 +1,24 @@
+# Historical measured S2G runtime reference, NOT a complete tested lock.
+# Python 3.10.12; CUDA 12.8. Do not treat successful installation as runtime proof.
+# Capture actual NumPy/SciPy/BLAS and native extension versions/hashes before replay.
+# PyTorch's +cu128 wheel requires its matching trusted wheel index; no install is automated.
+torch==2.7.1+cu128
+mamba-ssm==2.2.6.post3
+causal-conv1d==1.5.3.post1
+# These imports are present in frozen source; exact runtime versions still pending.
+numpy
+scipy
+transformers
+smplx
+librosa
+soundfile
+textgrid
+threadpoolctl
+Pillow
+pyrender
+trimesh
+PyOpenGL
+# cv2 is also required: preserve the actual recorded OpenCV distribution/version.
+# ffmpeg/ffprobe are external executables, not Python requirements.
+# Native higher-order JVP is bundled source, not a substitute package dependency.
+# Third-party pretrained assets/evaluator source and their licenses are separate.

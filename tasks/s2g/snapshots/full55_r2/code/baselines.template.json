@@ -1,0 +1,184 @@
+{
+  "schema": 1,
+  "protocol": "semtalk25-val-selected",
+  "split": "test",
+  "expected_count": 265,
+  "policies": [
+    "full55",
+    "body22"
+  ],
+  "manifest": null,
+  "raw_root": null,
+  "template_only_not_launchable": true,
+  "instructions": "Supply explicitly verified direct prediction directories on the authorized worker, never an archive or guessed descendant. CPU inventory hashes every res_<ID>.npz and verifies exact IDs/common full-clip budgets. Pin each actual_predictions_sha256 into predictions_sha256 before gated evaluation. Supply verified source hashes as provenance.sources [{kind,path,sha256}] if an archive/checkpoint/code artifact is available. Do not infer GT-completion or checkpoint selection metadata from filenames. No inference, extraction, download, axis search, or GT completion is performed by this tool.",
+  "baselines": [
+    {
+      "name": "SemTalk",
+      "prediction_root": null,
+      "predictions_sha256": null,
+      "generated_pose_policy": "full55",
+      "status": "unavailable",
+      "unavailable_reason": "This template has no configured, verified prediction directory.",
+      "provenance": {
+        "source_url": "https://github.com/Xiangyue-Zhang/SemTalk",
+        "raw_predictions": null,
+        "gt_motion_completion": null,
+        "pose_space": "SMPL-X local axis-angle",
+        "pose_fps": 30,
+        "coordinate_transform": "none",
+        "sources": [],
+        "selection": {
+          "split": "test",
+          "criterion": "Released checkpoint identity must be verified for supplied predictions",
+          "checkpoint": null,
+          "seed": 43
+        },
+        "notes": []
+      }
+    },
+    {
+      "name": "StreamTalk",
+      "prediction_root": null,
+      "predictions_sha256": null,
+      "generated_pose_policy": "full55",
+      "status": "unavailable",
+      "unavailable_reason": "This template has no configured, verified prediction directory.",
+      "provenance": {
+        "source_url": null,
+        "raw_predictions": null,
+        "gt_motion_completion": null,
+        "pose_space": "SMPL-X local axis-angle",
+        "pose_fps": 30,
+        "coordinate_transform": "none",
+        "sources": [],
+        "selection": {
+          "split": "unknown",
+          "criterion": null,
+          "checkpoint": null,
+          "seed": null
+        },
+        "notes": []
+      }
+    },
+    {
+      "name": "EMAGE",
+      "prediction_root": null,
+      "predictions_sha256": null,
+      "generated_pose_policy": "full55",
+      "status": "unavailable",
+      "unavailable_reason": "This template has no configured, verified prediction directory.",
+      "provenance": {
+        "source_url": "https://github.com/PantoMatrix/PantoMatrix",
+        "raw_predictions": null,
+        "gt_motion_completion": null,
+        "pose_space": "SMPL-X local axis-angle",
+        "pose_fps": 30,
+        "coordinate_transform": "none",
+        "sources": [],
+        "selection": {
+          "split": "unknown",
+          "criterion": null,
+          "checkpoint": null,
+          "seed": null
+        },
+        "notes": []
+      }
+    },
+    {
+      "name": "CaMN",
+      "prediction_root": null,
+      "predictions_sha256": null,
+      "generated_pose_policy": "full55",
+      "status": "unavailable",
+      "unavailable_reason": "This template has no configured, verified prediction directory.",
+      "provenance": {
+        "source_url": null,
+        "raw_predictions": null,
+        "gt_motion_completion": null,
+        "pose_space": "SMPL-X local axis-angle",
+        "pose_fps": 30,
+        "coordinate_transform": "none",
+        "sources": [],
+        "selection": {
+          "split": "unknown",
+          "criterion": null,
+          "checkpoint": null,
+          "seed": null
+        },
+        "notes": []
+      }
+    },
+    {
+      "name": "GestureLSM",
+      "prediction_root": null,
+      "predictions_sha256": null,
+      "generated_pose_policy": "full55",
+      "status": "unavailable",
+      "unavailable_reason": "This template has no configured, verified prediction directory.",
+      "provenance": {
+        "source_url": null,
+        "raw_predictions": null,
+        "gt_motion_completion": null,
+        "pose_space": "SMPL-X local axis-angle",
+        "pose_fps": 30,
+        "coordinate_transform": "none",
+        "sources": [],
+        "selection": {
+          "split": "unknown",
+          "criterion": null,
+          "checkpoint": null,
+          "seed": null
+        },
+        "notes": []
+      }
+    },
+    {
+      "name": "DisCo",
+      "prediction_root": null,
+      "predictions_sha256": null,
+      "generated_pose_policy": "full55",
+      "status": "unavailable",
+      "unavailable_reason": "This template has no configured, verified prediction directory.",
+      "provenance": {
+        "source_url": null,
+        "raw_predictions": null,
+        "gt_motion_completion": null,
+        "pose_space": "SMPL-X local axis-angle",
+        "pose_fps": 30,
+        "coordinate_transform": "none",
+        "sources": [],
+        "selection": {
+          "split": "unknown",
+          "criterion": null,
+          "checkpoint": null,
+          "seed": null
+        },
+        "notes": []
+      }
+    },
+    {
+      "name": "EchoMask",
+      "prediction_root": null,
+      "predictions_sha256": null,
+      "generated_pose_policy": "full55",
+      "status": "unavailable",
+      "unavailable_reason": "This template has no configured, verified prediction directory.",
+      "provenance": {
+        "source_url": null,
+        "raw_predictions": null,
+        "gt_motion_completion": null,
+        "pose_space": "SMPL-X local axis-angle",
+        "pose_fps": 30,
+        "coordinate_transform": "none",
+        "sources": [],
+        "selection": {
+          "split": "unknown",
+          "criterion": null,
+          "checkpoint": null,
+          "seed": null
+        },
+        "notes": []
+      }
+    }
+  ]
+}

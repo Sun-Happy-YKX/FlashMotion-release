@@ -1,0 +1,384 @@
+{
+  "schema": "flashmotion-third-party-source-collection-v1",
+  "collected_date": "2026-10-10",
+  "collection_mode": "Read-only original-host SSH source/license collection and public official-owner metadata; local apply_patch additions only.",
+  "frozen_source_receipt_modified": false,
+  "not_part_of_active_s2g_frozen_source_proof": true,
+  "credentials_or_tokens_collected": false,
+  "weights_or_datasets_copied_to_git": false,
+  "source_roots": {
+    "t2m": {
+      "host": "bubuyang-dmd-0924-102909-01-1x8-worker-0",
+      "path": "/efs/yangkaixing/FlowerDance_T2M_Long/third_party/FloodDiffusion",
+      "git_head_observed": "b611d6c4e24357a90066034935ed445179723b37",
+      "origin": "https://github.com/AlayaLab/FloodDiffusion.git",
+      "upstream_pinned_content_matches": true
+    },
+    "s2g": {
+      "host": "bubuyang-motion3b-1007-134026-1x8-worker-0",
+      "path": "/efs/yangkaixing/music2gesture_semtalk_20261003/vendor/emage_evaltools",
+      "git_head_observed": null,
+      "original_host_code_file_count": 4,
+      "original_host_license_or_notice_file_count": 0,
+      "upstream_repo": "H-Liu1997/emage_evaltools",
+      "upstream_revision": "a57d1dfb1162c2a9cc20013f0ab212c21f211e78",
+      "upstream_pinned_content_matches": true
+    }
+  },
+  "files": [
+    {
+      "destination": "third_party/t2m/FloodDiffusion/metrics/tools/t2m_evaluator.py",
+      "relative": "metrics/tools/t2m_evaluator.py",
+      "path": "/efs/yangkaixing/FlowerDance_T2M_Long/third_party/FloodDiffusion/metrics/tools/t2m_evaluator.py",
+      "bytes": 3990,
+      "sha256": "0613b64cf36e68ca79d33571d2285990e4416ffb234fd20df7a96d3f8f7c7aee",
+      "upstream_match": {
+        "url": "https://raw.githubusercontent.com/AlayaLab/FloodDiffusion/b611d6c4e24357a90066034935ed445179723b37/metrics/tools/t2m_evaluator.py",
+        "relative": "metrics/tools/t2m_evaluator.py",
+        "bytes": 3990,
+        "sha256": "0613b64cf36e68ca79d33571d2285990e4416ffb234fd20df7a96d3f8f7c7aee"
+      },
+      "local_verified": {
+        "relative": "third_party/t2m/FloodDiffusion/metrics/tools/t2m_evaluator.py",
+        "bytes": 3990,
+        "sha256": "0613b64cf36e68ca79d33571d2285990e4416ffb234fd20df7a96d3f8f7c7aee"
+      },
+      "byte_preserved": true
+    },
+    {
+      "destination": "third_party/t2m/FloodDiffusion/metrics/tools/word_vectorizer.py",
+      "relative": "metrics/tools/word_vectorizer.py",
+      "path": "/efs/yangkaixing/FlowerDance_T2M_Long/third_party/FloodDiffusion/metrics/tools/word_vectorizer.py",
+      "bytes": 3132,
+      "sha256": "74f1614bbcf2f9f6b3587a4dd5ca0657eccbc03dc59693de2e75f9d228dcc829",
+      "upstream_match": {
+        "url": "https://raw.githubusercontent.com/AlayaLab/FloodDiffusion/b611d6c4e24357a90066034935ed445179723b37/metrics/tools/word_vectorizer.py",
+        "relative": "metrics/tools/word_vectorizer.py",
+        "bytes": 3132,
+        "sha256": "74f1614bbcf2f9f6b3587a4dd5ca0657eccbc03dc59693de2e75f9d228dcc829"
+      },
+      "local_verified": {
+        "relative": "third_party/t2m/FloodDiffusion/metrics/tools/word_vectorizer.py",
+        "bytes": 3132,
+        "sha256": "74f1614bbcf2f9f6b3587a4dd5ca0657eccbc03dc59693de2e75f9d228dcc829"
+      },
+      "byte_preserved": true
+    },
+    {
+      "destination": "third_party/t2m/FloodDiffusion/metrics/tools/utils.py",
+      "relative": "metrics/tools/utils.py",
+      "path": "/efs/yangkaixing/FlowerDance_T2M_Long/third_party/FloodDiffusion/metrics/tools/utils.py",
+      "bytes": 17657,
+      "sha256": "8dd4260cd04b795cfb4374e3833e1051d01da567d6e4df8cc6399000db9420fc",
+      "upstream_match": {
+        "url": "https://raw.githubusercontent.com/AlayaLab/FloodDiffusion/b611d6c4e24357a90066034935ed445179723b37/metrics/tools/utils.py",
+        "relative": "metrics/tools/utils.py",
+        "bytes": 17657,
+        "sha256": "8dd4260cd04b795cfb4374e3833e1051d01da567d6e4df8cc6399000db9420fc"
+      },
+      "local_verified": {
+        "relative": "third_party/t2m/FloodDiffusion/metrics/tools/utils.py",
+        "bytes": 17657,
+        "sha256": "8dd4260cd04b795cfb4374e3833e1051d01da567d6e4df8cc6399000db9420fc"
+      },
+      "byte_preserved": true
+    },
+    {
+      "destination": "third_party/t2m/FloodDiffusion/THIRD_PARTY_LICENSES.md",
+      "relative": "THIRD_PARTY_LICENSES.md",
+      "path": "/efs/yangkaixing/FlowerDance_T2M_Long/third_party/FloodDiffusion/THIRD_PARTY_LICENSES.md",
+      "bytes": 2659,
+      "sha256": "6d0085f387883a8b08ce48595ad2c8e7dd9bcf98a2e5cc0588567cfda08c17b3",
+      "upstream_match": {
+        "url": "https://raw.githubusercontent.com/AlayaLab/FloodDiffusion/b611d6c4e24357a90066034935ed445179723b37/THIRD_PARTY_LICENSES.md",
+        "relative": "THIRD_PARTY_LICENSES.md",
+        "bytes": 2659,
+        "sha256": "6d0085f387883a8b08ce48595ad2c8e7dd9bcf98a2e5cc0588567cfda08c17b3"
+      },
+      "local_verified": {
+        "relative": "third_party/t2m/FloodDiffusion/THIRD_PARTY_LICENSES.md",
+        "bytes": 2659,
+        "sha256": "6d0085f387883a8b08ce48595ad2c8e7dd9bcf98a2e5cc0588567cfda08c17b3"
+      },
+      "byte_preserved": true
+    },
+    {
+      "destination": "third_party/t2m/FloodDiffusion/LICENSE",
+      "relative": "LICENSE",
+      "path": "/efs/yangkaixing/FlowerDance_T2M_Long/third_party/FloodDiffusion/LICENSE",
+      "bytes": 11213,
+      "sha256": "05cb7b1b85f775538a2616ca1df6aab157e177c40c359b51a4ab609e3575bf51",
+      "upstream_match": {
+        "url": "https://raw.githubusercontent.com/AlayaLab/FloodDiffusion/b611d6c4e24357a90066034935ed445179723b37/LICENSE",
+        "relative": "LICENSE",
+        "bytes": 11213,
+        "sha256": "05cb7b1b85f775538a2616ca1df6aab157e177c40c359b51a4ab609e3575bf51"
+      },
+      "local_verified": {
+        "relative": "third_party/t2m/FloodDiffusion/LICENSE",
+        "bytes": 11213,
+        "sha256": "05cb7b1b85f775538a2616ca1df6aab157e177c40c359b51a4ab609e3575bf51"
+      },
+      "byte_preserved": true
+    },
+    {
+      "destination": "third_party/t2m/LICENSE.text-to-motion.MIT.txt",
+      "url": "https://raw.githubusercontent.com/EricGuo5513/text-to-motion/master/LICENSE",
+      "bytes": 1066,
+      "sha256": "761dd46139fc06be92f2783041d64ca414985726c0d809f74dadb9d1ad89f075",
+      "local_verified": {
+        "relative": "third_party/t2m/LICENSE.text-to-motion.MIT.txt",
+        "bytes": 1066,
+        "sha256": "761dd46139fc06be92f2783041d64ca414985726c0d809f74dadb9d1ad89f075"
+      },
+      "byte_preserved": true
+    },
+    {
+      "destination": "third_party/s2g/emage_evaltools/motion_encoder.py",
+      "relative": "motion_encoder.py",
+      "path": "/efs/yangkaixing/music2gesture_semtalk_20261003/vendor/emage_evaltools/motion_encoder.py",
+      "bytes": 7332,
+      "sha256": "6167737158f74b810269bb0d83478acf533c69739437ac8a3ec94b08ddfa152a",
+      "upstream_match": {
+        "url": "https://huggingface.co/H-Liu1997/emage_evaltools/resolve/a57d1dfb1162c2a9cc20013f0ab212c21f211e78/motion_encoder.py",
+        "sha256": "6167737158f74b810269bb0d83478acf533c69739437ac8a3ec94b08ddfa152a",
+        "bytes": 7332
+      },
+      "local_verified": {
+        "relative": "third_party/s2g/emage_evaltools/motion_encoder.py",
+        "bytes": 7332,
+        "sha256": "6167737158f74b810269bb0d83478acf533c69739437ac8a3ec94b08ddfa152a"
+      },
+      "byte_preserved": true
+    },
+    {
+      "destination": "third_party/s2g/emage_evaltools/decoders.py",
+      "relative": "decoders.py",
+      "path": "/efs/yangkaixing/music2gesture_semtalk_20261003/vendor/emage_evaltools/decoders.py",
+      "bytes": 1926,
+      "sha256": "a9fa1b812a0a45a3e48a8f8773b0359d385021db2f613f4aa8341a3310edb5c9",
+      "upstream_match": {
+        "url": "https://huggingface.co/H-Liu1997/emage_evaltools/resolve/a57d1dfb1162c2a9cc20013f0ab212c21f211e78/decoders.py",
+        "sha256": "a9fa1b812a0a45a3e48a8f8773b0359d385021db2f613f4aa8341a3310edb5c9",
+        "bytes": 1926
+      },
+      "local_verified": {
+        "relative": "third_party/s2g/emage_evaltools/decoders.py",
+        "bytes": 1926,
+        "sha256": "a9fa1b812a0a45a3e48a8f8773b0359d385021db2f613f4aa8341a3310edb5c9"
+      },
+      "byte_preserved": true
+    },
+    {
+      "destination": "third_party/s2g/emage_evaltools/skeleton.py",
+      "relative": "skeleton.py",
+      "path": "/efs/yangkaixing/music2gesture_semtalk_20261003/vendor/emage_evaltools/skeleton.py",
+      "bytes": 9519,
+      "sha256": "546b1fd1c29cc313206fb831645100f24d638530c6c8d5acf37a8c3c9a6d12ea",
+      "upstream_match": {
+        "url": "https://huggingface.co/H-Liu1997/emage_evaltools/resolve/a57d1dfb1162c2a9cc20013f0ab212c21f211e78/skeleton.py",
+        "sha256": "546b1fd1c29cc313206fb831645100f24d638530c6c8d5acf37a8c3c9a6d12ea",
+        "bytes": 9519
+      },
+      "local_verified": {
+        "relative": "third_party/s2g/emage_evaltools/skeleton.py",
+        "bytes": 9519,
+        "sha256": "546b1fd1c29cc313206fb831645100f24d638530c6c8d5acf37a8c3c9a6d12ea"
+      },
+      "byte_preserved": true
+    },
+    {
+      "destination": "third_party/s2g/emage_evaltools/skeleton_DME.py",
+      "relative": "skeleton_DME.py",
+      "path": "/efs/yangkaixing/music2gesture_semtalk_20261003/vendor/emage_evaltools/skeleton_DME.py",
+      "bytes": 17441,
+      "sha256": "ed62dd3f10dab25a17332b60c4502d9ed06a93a93f9be13870f1ba4f9b2bbff0",
+      "upstream_match": {
+        "url": "https://huggingface.co/H-Liu1997/emage_evaltools/resolve/a57d1dfb1162c2a9cc20013f0ab212c21f211e78/skeleton_DME.py",
+        "sha256": "ed62dd3f10dab25a17332b60c4502d9ed06a93a93f9be13870f1ba4f9b2bbff0",
+        "bytes": 17441
+      },
+      "local_verified": {
+        "relative": "third_party/s2g/emage_evaltools/skeleton_DME.py",
+        "bytes": 17441,
+        "sha256": "ed62dd3f10dab25a17332b60c4502d9ed06a93a93f9be13870f1ba4f9b2bbff0"
+      },
+      "byte_preserved": true
+    },
+    {
+      "destination": "third_party/s2g/LICENSE.TM2T.MIT.txt",
+      "url": "https://raw.githubusercontent.com/EricGuo5513/TM2T/main/LICENSE",
+      "bytes": 1066,
+      "sha256": "761dd46139fc06be92f2783041d64ca414985726c0d809f74dadb9d1ad89f075",
+      "local_verified": {
+        "relative": "third_party/s2g/LICENSE.TM2T.MIT.txt",
+        "bytes": 1066,
+        "sha256": "761dd46139fc06be92f2783041d64ca414985726c0d809f74dadb9d1ad89f075"
+      },
+      "byte_preserved": true
+    },
+    {
+      "destination": "third_party/s2g/LICENSE.Apache-2.0.txt",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "local_verified": {
+        "relative": "third_party/s2g/LICENSE.Apache-2.0.txt",
+        "bytes": 11358,
+        "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+      },
+      "byte_preserved": true
+    }
+  ],
+  "closure": {
+    "t2m": {
+      "native_frozen_consumer": "tasks/t2m/snapshots/uncond_r3_20261009/code/t2m_long/evaluator.py (and per-profile copies)",
+      "imported_tools": "Only three metrics.tools modules; all encoder classes are inside t2m_evaluator.py. No direct model imports and no six-model-file guess.",
+      "external_python_imports": {
+        "metrics/tools/t2m_evaluator.py": [
+          "torch",
+          "torch.nn",
+          "torch.nn.utils.rnn"
+        ],
+        "metrics/tools/word_vectorizer.py": [
+          "numpy",
+          "os.path",
+          "pickle"
+        ],
+        "metrics/tools/utils.py": [
+          "numpy",
+          "scipy.linalg",
+          "sklearn.metrics.pairwise",
+          "sys",
+          "torch"
+        ]
+      },
+      "not_collected": "Original metrics/t2m.py Lightning/torchmetrics wrapper is not imported by the native frozen FloodT2MEvaluator and is not included; it would require its separate utils.initialize closure.",
+      "package_initializers": "Original metrics and tools directories have no __init__.py; Python namespace import is retained without inventing source files."
+    },
+    "s2g": {
+      "native_frozen_consumer": "tasks/s2g/snapshots/full55_r2/code/evaluation.py:_encoder_class",
+      "external_python_imports": {
+        "motion_encoder.py": [
+          ".decoders",
+          ".skeleton",
+          ".skeleton_DME",
+          "numpy",
+          "torch",
+          "torch.nn"
+        ],
+        "decoders.py": [
+          "torch.nn"
+        ],
+        "skeleton.py": [
+          ".skeleton_DME",
+          "torch",
+          "torch.nn"
+        ],
+        "skeleton_DME.py": [
+          "math",
+          "numpy",
+          "torch",
+          "torch.nn",
+          "torch.nn.functional"
+        ]
+      },
+      "native_import_closure_complete": true,
+      "not_collected": "Official HF has extra empty __init__.py and mertic.py; actual local consumer uses its bound native evaluation.py and only the four vendored files, not those extra modules.",
+      "architecture_asset_prerequisite": "VAESKConv reads SMPL-X kintree_table from a user-licensed SMPLX_NEUTRAL_2020.npz even for FGD encoding. That binary is excluded."
+    }
+  },
+  "license_mapping": {
+    "t2m": {
+      "files": [
+        "third_party/t2m/FloodDiffusion/metrics/tools/t2m_evaluator.py",
+        "third_party/t2m/FloodDiffusion/metrics/tools/word_vectorizer.py",
+        "third_party/t2m/FloodDiffusion/metrics/tools/utils.py"
+      ],
+      "license": "MIT (Copyright (c) 2022 Chuan Guo)",
+      "evidence": "Original FloodDiffusion THIRD_PARTY_LICENSES.md explicitly identifies exactly these three adapted files as EricGuo5513/text-to-motion MIT; upstream MIT text preserved.",
+      "not_blanket_apache": true
+    },
+    "s2g": {
+      "owner_declaration": "apache-2.0",
+      "evidence": {
+        "url": "https://huggingface.co/H-Liu1997/emage_evaltools/blob/a57d1dfb1162c2a9cc20013f0ab212c21f211e78/README.md",
+        "bytes": 31,
+        "sha256": "4bcf87ecfbbb8e07a01b21415a970c8b53a5283bf6872b657040d3f45c9241f7",
+        "text": "---\r\nlicense: apache-2.0\r\n---\r\n"
+      },
+      "byte_matching_all_four_original_vendor_files": true,
+      "additional_upstream_terms": [
+        {
+          "file": "decoders.py",
+          "evidence": "Header explicitly identifies EricGuo5513/TM2T and its MIT LICENSE; original header retained and official MIT text copied."
+        },
+        {
+          "file": "skeleton_DME.py",
+          "evidence": "Full original embedded 2020 DeepMotionEditing copyright, two redistribution conditions and disclaimer preserved byte-for-byte in source.",
+          "identification": "BSD-2-Clause-style actual embedded terms; no third non-endorsement clause was present; do not mislabel BSD-3-Clause."
+        }
+      ],
+      "notice_caveat": "This is an audit attribution, not a legal determination of every derivative component. Owner repository license declaration does not override preserved MIT/BSD terms or authorize SMPL-X model redistribution."
+    }
+  },
+  "upstream_asset_metadata": [
+    {
+      "url": "https://huggingface.co/api/models/H-Liu1997/emage_evaltools",
+      "id": "H-Liu1997/emage_evaltools",
+      "sha": "a57d1dfb1162c2a9cc20013f0ab212c21f211e78",
+      "license": "apache-2.0",
+      "siblings": [
+        ".gitattributes",
+        "AESKConv_240_100.bin",
+        "README.md",
+        "__init__.py",
+        "decoders.py",
+        "mean_vel_smplxflame_30.npy",
+        "mertic.py",
+        "motion_encoder.py",
+        "skeleton.py",
+        "skeleton_DME.py",
+        "smplx_models/smplx/SMPLX_NEUTRAL_2020.npz"
+      ]
+    },
+    {
+      "url": "https://huggingface.co/api/models/AlayaLab/FloodDiffusionDownloads",
+      "id": "AlayaLab/FloodDiffusionDownloads",
+      "sha": "0cf2a8968769e07a92839944cc6d090cb437952a",
+      "license": "apache-2.0",
+      "siblings": [
+        ".gitattributes",
+        "BABEL_streamed.zip",
+        "HumanML3D.zip",
+        "README.md",
+        "deps.zip",
+        "outputs.zip",
+        "outputs_tiny.zip"
+      ]
+    },
+    {
+      "url": "https://huggingface.co/api/models/facebook/hubert-large-ls960-ft/revision/ece5fabbf034c1073acae96d5401b25be96709d8",
+      "id": "facebook/hubert-large-ls960-ft",
+      "sha": "ece5fabbf034c1073acae96d5401b25be96709d8",
+      "license": "apache-2.0",
+      "siblings": [
+        ".gitattributes",
+        "README.md",
+        "config.json",
+        "preprocessor_config.json",
+        "pytorch_model.bin",
+        "special_tokens_map.json",
+        "tf_model.h5",
+        "tokenizer_config.json",
+        "vocab.json"
+      ]
+    }
+  ],
+  "license_scope": "Third-party evaluator source is not relicensed as blanket FlashMotion MIT. Main training/model/text encoders/native package licenses remain separate task obligations.",
+  "limitations": [
+    "No GPU allocation, evaluator inference, uploads, installation or original-host mutation was used for this collection.",
+    "T2M evaluator weight original-host hashes and download-bundle pointer do not prove the currently published deps.zip contains byte-identical extracted members; restoration must verify each selected member hash.",
+    "S2G raw/cache publishing is a separate authorization/license decision; root reports cache pose_mean permission pending, so all S2G cache external publishing remains blocked. SMPL-X model weights always excluded."
+  ]
+}

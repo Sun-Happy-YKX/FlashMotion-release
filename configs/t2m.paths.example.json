@@ -1,0 +1,10 @@
+{
+  "python": "python",
+  "data_root": "/replace/with/licensed/FloodDiffusion/raw_data",
+  "embedding_root": "/replace/with/umt5_xxl_sentence_features",
+  "flood_root": "/replace/with/licensed/FloodDiffusion",
+  "cohort_root": "/replace/with/babel_long_v2/motions/flooddiffusion",
+  "output_root": "../../outputs/t2m_new_runs",
+  "training_gpus": "0,1,2,3,4,5,6,7",
+  "evaluation_gpus": "0"
+}

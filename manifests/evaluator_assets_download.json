@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "repo_id": "yangkaixing/FlashMotion-checkpoints",
+  "repo_type": "model",
+  "private": true,
+  "stage_root": "/safe/FlashMotion-models",
+  "files": [
+    {
+      "path": "t2m/evaluator/FloodDiffusion/deps/t2m/humanml3d/text_encoder.pt",
+      "local_path": "t2m/evaluator/FloodDiffusion/deps/t2m/humanml3d/text_encoder.pt",
+      "sha256": "0b8dd734248381587ddf7fee0f4f137898813e86699ff3a42190852c3fff04d0",
+      "bytes": 16406745
+    },
+    {
+      "path": "t2m/evaluator/FloodDiffusion/deps/t2m/humanml3d/movement_encoder.pt",
+      "local_path": "t2m/evaluator/FloodDiffusion/deps/t2m/humanml3d/movement_encoder.pt",
+      "sha256": "7fbd0369259a23c61ba36347ac657b7dd1d6777e6028b177e245270f7179cde5",
+      "bytes": 7374081
+    },
+    {
+      "path": "t2m/evaluator/FloodDiffusion/deps/t2m/humanml3d/motion_encoder.pt",
+      "local_path": "t2m/evaluator/FloodDiffusion/deps/t2m/humanml3d/motion_encoder.pt",
+      "sha256": "5bd2950d6ec68fbaeac75eca5cf5de3b508b0b340be066af2e5b56121eaf19f4",
+      "bytes": 62995445
+    },
+    {
+      "path": "t2m/evaluator/FloodDiffusion/deps/t2m/meta/mean.npy",
+      "local_path": "t2m/evaluator/FloodDiffusion/deps/t2m/meta/mean.npy",
+      "sha256": "0bdb5ba69a3a9e34d71990db15bc535ebc024c8d95ddb5574196f96058faa7d3",
+      "bytes": 2232
+    },
+    {
+      "path": "t2m/evaluator/FloodDiffusion/deps/t2m/meta/std.npy",
+      "local_path": "t2m/evaluator/FloodDiffusion/deps/t2m/meta/std.npy",
+      "sha256": "6a5f7d60301c9465972fc225f8ad0ee8f957e7720431189123eb6d15873a9557",
+      "bytes": 2232
+    },
+    {
+      "path": "t2m/evaluator/FloodDiffusion/deps/glove/our_vab_data.npy",
+      "local_path": "t2m/evaluator/FloodDiffusion/deps/glove/our_vab_data.npy",
+      "sha256": "73ed9b73ee5bc5ab683661c132b9f98fe305672dffdf70ceeac1bc447543d668",
+      "bytes": 10077728
+    },
+    {
+      "path": "t2m/evaluator/FloodDiffusion/deps/glove/our_vab_idx.pkl",
+      "local_path": "t2m/evaluator/FloodDiffusion/deps/glove/our_vab_idx.pkl",
+      "sha256": "d85dce83d2c27a92bb94bb51dc1f55a04fcaa328c359d23eccf648e296c16493",
+      "bytes": 79811
+    },
+    {
+      "path": "t2m/evaluator/FloodDiffusion/deps/glove/our_vab_words.pkl",
+      "local_path": "t2m/evaluator/FloodDiffusion/deps/glove/our_vab_words.pkl",
+      "sha256": "fac88da1be6f00d36b72b88c9745c8ac35a94a7bd6ccf1fa3bab380faf8c2e0d",
+      "bytes": 67470
+    },
+    {
+      "path": "s2g/evaluator/emage_evaltools/AESKConv_240_100.bin",
+      "local_path": "s2g/evaluator/emage_evaltools/AESKConv_240_100.bin",
+      "sha256": "5cd9566b24264f34d44003b3de62cdfd50aa85b7cdde2d369214599023c40f55",
+      "bytes": 17558653
+    },
+    {
+      "path": "s2g/evaluator/emage_evaltools/mean_vel_smplxflame_30.npy",
+      "local_path": "s2g/evaluator/emage_evaltools/mean_vel_smplxflame_30.npy",
+      "sha256": "53b5e48f2a7bf78c41a6de6395d6bb4f29018465ca5d0ee2820a2be3eebb7137",
+      "bytes": 348
+    }
+  ]
+}

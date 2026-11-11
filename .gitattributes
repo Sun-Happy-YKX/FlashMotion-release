@@ -1,0 +1,13 @@
+* text=auto eol=lf
+# Frozen evidence must retain original bytes and SHA on every platform.
+tasks/**/snapshots/** -text
+tasks/t2m/reference/** -text
+third_party/** -text
+# Preserve the recorded provider's original blank-line whitespace as well.
+third_party/native_patches/selective_scan_interface.observed.py whitespace=-blank-at-eol
+manifests/frozen_source_collection.json -text
+manifests/third_party_source_collection.20261010.json -text
+manifests/source_additions.20261010.json -text
+manifests/reproduction/** -text
+manifests/** -text
+docs/runtime/** -text

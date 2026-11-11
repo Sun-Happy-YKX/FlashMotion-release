@@ -1,0 +1,235 @@
+{
+  "schema": "flashmotion-evaluator-external-assets-v1",
+  "captured_date": "2026-10-10",
+  "weights_committed_to_git": false,
+  "downloads_performed": false,
+  "credentials_or_login_used": false,
+  "source_receipt": "manifests/third_party_source_collection.20261010.json",
+  "bound_original_asset_proofs": {
+    "s2g": {
+      "receipt": "FlashMotion_s2g_original_preflight_actual_20261010.json",
+      "sha256": "15f8e4708d40f4de13e0a141ac324e874eef97d7474ead65d90e8482925c1ac5"
+    },
+    "t2m": {
+      "receipt": "FlashMotion_t2m_preflight_actual_20261010_071032Z.json",
+      "sha256": "ec89ac0beb0fcb8c889fabaac12e9da210cc94a9d36fb90ac47cae87120d35de"
+    }
+  },
+  "t2m": {
+    "repo_id_native_downloader": "ShandaAI/FloodDiffusionDownloads",
+    "repo_id_current_official_redirect": "AlayaLab/FloodDiffusionDownloads",
+    "repo_type": "model",
+    "revision": "0cf2a8968769e07a92839944cc6d090cb437952a",
+    "license_declaration": "apache-2.0 owner model card; preserve separate HumanML3D/text-to-motion/GloVe provenance and terms, not blanket FlashMotion MIT",
+    "source_downloader": {
+      "path": "/efs/yangkaixing/FlowerDance_T2M_Long/third_party/FloodDiffusion/download_assets.py",
+      "sha256": "50c8eaa89f62190e456ff377bea041c8baee18a7b834e61cb60b7fd10fa5dc4a",
+      "behavior": "Default original downloader also downloads outputs.zip and outputs_tiny.zip. Do not run it for minimal evaluator restoration."
+    },
+    "bundle": {
+      "filename": "deps.zip",
+      "bytes": 12992154753,
+      "upstream_lfs_sha256": "bd12f617474bf9f2a4321308b6ee3697b34b11a4ce77f47ff7d50db0d6fe7d85",
+      "official_url": "https://huggingface.co/AlayaLab/FloodDiffusionDownloads/resolve/0cf2a8968769e07a92839944cc6d090cb437952a/deps.zip",
+      "metadata_evidence_url": "https://huggingface.co/api/models/AlayaLab/FloodDiffusionDownloads/tree/0cf2a8968769e07a92839944cc6d090cb437952a?expand=true",
+      "not_downloaded_or_unpacked_in_this_collection": true
+    },
+    "minimal_evaluator_members": [
+      {
+        "relative": "deps/t2m/humanml3d/text_encoder.pt",
+        "path": "/efs/yangkaixing/FlowerDance_T2M_Long/third_party/FloodDiffusion/deps/t2m/humanml3d/text_encoder.pt",
+        "bytes": 16406745,
+        "sha256": "0b8dd734248381587ddf7fee0f4f137898813e86699ff3a42190852c3fff04d0"
+      },
+      {
+        "relative": "deps/t2m/humanml3d/movement_encoder.pt",
+        "path": "/efs/yangkaixing/FlowerDance_T2M_Long/third_party/FloodDiffusion/deps/t2m/humanml3d/movement_encoder.pt",
+        "bytes": 7374081,
+        "sha256": "7fbd0369259a23c61ba36347ac657b7dd1d6777e6028b177e245270f7179cde5"
+      },
+      {
+        "relative": "deps/t2m/humanml3d/motion_encoder.pt",
+        "path": "/efs/yangkaixing/FlowerDance_T2M_Long/third_party/FloodDiffusion/deps/t2m/humanml3d/motion_encoder.pt",
+        "bytes": 62995445,
+        "sha256": "5bd2950d6ec68fbaeac75eca5cf5de3b508b0b340be066af2e5b56121eaf19f4"
+      },
+      {
+        "relative": "deps/t2m/meta/mean.npy",
+        "path": "/efs/yangkaixing/FlowerDance_T2M_Long/third_party/FloodDiffusion/deps/t2m/meta/mean.npy",
+        "bytes": 2232,
+        "sha256": "0bdb5ba69a3a9e34d71990db15bc535ebc024c8d95ddb5574196f96058faa7d3"
+      },
+      {
+        "relative": "deps/t2m/meta/std.npy",
+        "path": "/efs/yangkaixing/FlowerDance_T2M_Long/third_party/FloodDiffusion/deps/t2m/meta/std.npy",
+        "bytes": 2232,
+        "sha256": "6a5f7d60301c9465972fc225f8ad0ee8f957e7720431189123eb6d15873a9557"
+      },
+      {
+        "relative": "deps/glove/our_vab_data.npy",
+        "bytes": 10077728,
+        "sha256": "73ed9b73ee5bc5ab683661c132b9f98fe305672dffdf70ceeac1bc447543d668",
+        "path": "/efs/yangkaixing/FlowerDance_T2M_Long/third_party/FloodDiffusion/deps/glove/our_vab_data.npy"
+      },
+      {
+        "relative": "deps/glove/our_vab_idx.pkl",
+        "bytes": 79811,
+        "sha256": "d85dce83d2c27a92bb94bb51dc1f55a04fcaa328c359d23eccf648e296c16493",
+        "path": "/efs/yangkaixing/FlowerDance_T2M_Long/third_party/FloodDiffusion/deps/glove/our_vab_idx.pkl"
+      },
+      {
+        "relative": "deps/glove/our_vab_words.pkl",
+        "bytes": 67470,
+        "sha256": "fac88da1be6f00d36b72b88c9745c8ac35a94a7bd6ccf1fa3bab380faf8c2e0d",
+        "path": "/efs/yangkaixing/FlowerDance_T2M_Long/third_party/FloodDiffusion/deps/glove/our_vab_words.pkl"
+      }
+    ],
+    "code_root": "third_party/t2m/FloodDiffusion",
+    "instructions": [
+      "Use an isolated staging directory, never extract deps.zip over the code checkout or a prior data root.",
+      "Download pinned deps.zip only; verify its SHA256 before inspecting the zip directory.",
+      "Select only the eight exact deps/t2m/humanml3d, deps/t2m/meta and deps/glove members listed here; check each extracted member hash against original-host proof. Reject traversal, symlink or unexpected members.",
+      "Place verified selected files under the configured Flood evaluator root so deps/... matches the native adapter; no T5/UMT5/SMPL model bundle is needed for this evaluator.",
+      "Before use, inspect the upstream archive member list and verify each required member against the hashes above; archive contents were not validated during collection."
+    ],
+    "public_download_command": "python -c \"from huggingface_hub import hf_hub_download; print(hf_hub_download(repo_id='AlayaLab/FloodDiffusionDownloads', filename='deps.zip', revision='0cf2a8968769e07a92839944cc6d090cb437952a', repo_type='model', local_dir='STAGING_T2M_ASSETS', token=False))\""
+  },
+  "s2g": {
+    "evaluator": {
+      "repo_id": "H-Liu1997/emage_evaltools",
+      "repo_type": "model",
+      "revision": "a57d1dfb1162c2a9cc20013f0ab212c21f211e78",
+      "license_declaration": "apache-2.0 (pinned original card evidence in separate source receipt); inherited code MIT/BSD terms retained.",
+      "minimal_download_files": [
+        "AESKConv_240_100.bin",
+        "mean_vel_smplxflame_30.npy"
+      ],
+      "actual_assets": [
+        {
+          "path": "/efs/xiangyuezhang/globaldiff_assets/pretrained/emage_evaltools/AESKConv_240_100.bin",
+          "bytes": 17558653,
+          "sha256": "5cd9566b24264f34d44003b3de62cdfd50aa85b7cdde2d369214599023c40f55"
+        },
+        {
+          "path": "/efs/xiangyuezhang/globaldiff_assets/pretrained/emage_evaltools/mean_vel_smplxflame_30.npy",
+          "bytes": 348,
+          "sha256": "53b5e48f2a7bf78c41a6de6395d6bb4f29018465ca5d0ee2820a2be3eebb7137"
+        }
+      ],
+      "official_pantomatrix_portal": "https://github.com/PantoMatrix/PantoMatrix#2-models-and-tools-list",
+      "official_aesk_page": "https://huggingface.co/H-Liu1997/emage_evaltools/blob/a57d1dfb1162c2a9cc20013f0ab212c21f211e78/AESKConv_240_100.bin",
+      "actual_lfs_hash_matches_both_files": true,
+      "selective_download_command": "python -c \"from huggingface_hub import snapshot_download; snapshot_download(repo_id='H-Liu1997/emage_evaltools', revision='a57d1dfb1162c2a9cc20013f0ab212c21f211e78', repo_type='model', allow_patterns=['AESKConv_240_100.bin','mean_vel_smplxflame_30.npy'], local_dir='STAGING_S2G_METRIC_ASSETS', token=False)\"",
+      "instructions": "Do not clone or snapshot-download the entire owner model repository; it also exposes SMPL-X model weights, which are excluded. Native source consumer uses only four verified vendor files already in third_party/s2g/emage_evaltools."
+    },
+    "hubert": {
+      "repo_id": "facebook/hubert-large-ls960-ft",
+      "repo_type": "model",
+      "revision": "ece5fabbf034c1073acae96d5401b25be96709d8",
+      "license_declaration": "apache-2.0 owner model card",
+      "files": [
+        {
+          "filename": "config.json",
+          "path": "/efs/yangkaixing/music2gesture_semtalk_20261003/assets/hubert-large-ls960-ft_ece5fabb/config.json",
+          "bytes": 1376,
+          "sha256": "f87fc63802e37115034d1018c663b61ccd26000e78461a50fbca8fddddc4f429"
+        },
+        {
+          "filename": "preprocessor_config.json",
+          "path": "/efs/yangkaixing/music2gesture_semtalk_20261003/assets/hubert-large-ls960-ft_ece5fabb/preprocessor_config.json",
+          "bytes": 212,
+          "sha256": "a2254a5b58f72cd4de3632f8eee64f3f098b7c1402128d2f419e7d00ae13e335"
+        },
+        {
+          "filename": "pytorch_model.bin",
+          "path": "/efs/yangkaixing/music2gesture_semtalk_20261003/assets/hubert-large-ls960-ft_ece5fabb/pytorch_model.bin",
+          "bytes": 1262057559,
+          "sha256": "9cf43abec3f0410ad6854afa4d376c69ccb364b48ddddfd25c4c5aa16398eab0"
+        },
+        {
+          "filename": "special_tokens_map.json",
+          "path": "/efs/yangkaixing/music2gesture_semtalk_20261003/assets/hubert-large-ls960-ft_ece5fabb/special_tokens_map.json",
+          "bytes": 85,
+          "sha256": "bb7068de1150661a10b55f9e4b12a0e77af8bf91f5e45e1b58afaf1d0e17f675"
+        },
+        {
+          "filename": "tokenizer_config.json",
+          "path": "/efs/yangkaixing/music2gesture_semtalk_20261003/assets/hubert-large-ls960-ft_ece5fabb/tokenizer_config.json",
+          "bytes": 138,
+          "sha256": "d773cde8c2ca89ab86892f0b5e670c5ebed4dc72e20ed647f6cb843ad2c0bd26"
+        },
+        {
+          "filename": "vocab.json",
+          "path": "/efs/yangkaixing/music2gesture_semtalk_20261003/assets/hubert-large-ls960-ft_ece5fabb/vocab.json",
+          "bytes": 291,
+          "sha256": "19727f8944fe6459fc3f240ae2c198395b740f6a029bd23e06656266b83bcf64"
+        }
+      ],
+      "download_command": "python -c \"from huggingface_hub import snapshot_download; snapshot_download(repo_id='facebook/hubert-large-ls960-ft', revision='ece5fabbf034c1073acae96d5401b25be96709d8', allow_patterns=['config.json','preprocessor_config.json','pytorch_model.bin','special_tokens_map.json','tokenizer_config.json','vocab.json'], local_dir='STAGING_S2G_HUBERT', token=False)\"",
+      "scope": "Required for rebuilding native audio cache, not for generating from an already verified exact feature cache."
+    },
+    "vocabulary": {
+      "repo_id": "H-Liu1997/BEAT2_Tools",
+      "repo_type": "dataset",
+      "revision": "94f0ecb26dc66219b6a8216b9999d6b2eda505b5",
+      "filename": "emage_weights/vocab.pkl",
+      "actual_file": {
+        "path": "/efs/xiangyuezhang/globaldiff_assets/raw/BEAT2/beat_english_v2.0.0/weights/vocab.pkl",
+        "bytes": 13821361,
+        "sha256": "54fbcea7b19e0ee9b5c5836c85087a682d3a9513041091ce3e95d83eed0b2acd"
+      },
+      "license_declaration": "apache-2.0",
+      "official_pointer_hash_matches_actual": true,
+      "download_command": "python -c \"from huggingface_hub import hf_hub_download; print(hf_hub_download(repo_id='H-Liu1997/BEAT2_Tools', filename='emage_weights/vocab.pkl', revision='94f0ecb26dc66219b6a8216b9999d6b2eda505b5', repo_type='dataset', local_dir='STAGING_S2G_VOCAB', token=False))\"",
+      "caution": "This is a pickle with an upstream Vocab class reference. Verify exact SHA before native reading; never load arbitrary third-party pickle input."
+    },
+    "smplx": {
+      "actual_reference": {
+        "path": "/efs/xiangyuezhang/globaldiff_assets/pretrained/emage_evaltools/smplx_models/smplx/SMPLX_NEUTRAL_2020.npz",
+        "bytes": 167264530,
+        "sha256": "bdf06146e27d92022fe5dadad3b9203373f6879eca8e4d8235359ee3ec6a5a74"
+      },
+      "official_obtain_and_terms": "https://smpl-x.is.tue.mpg.de/",
+      "required_for": "Native full55 evaluator uses static betas, mesh joints and AESK kintree_table; obtain the correct neutral FLAME2020 model yourself under model-owner terms.",
+      "must_not_download_from_hf_mirror": true,
+      "distribution_scope": "Excluded from Git and public redistribution. Owner-confirmed private distribution is recorded in manifests/s2g_private_dependency_permission.20261010.json."
+    },
+    "dataset_and_cache_boundary": {
+      "permission_record": "manifests/s2g_private_dependency_permission.20261010.json",
+      "distribution_scope": "Owner-confirmed private distribution of the required S2G cache and SMPL-X dependency; public redistribution is not authorized.",
+      "underlying_permission_document_independently_reviewed": false
+    }
+  },
+  "verification_and_portability": [
+    "These download commands have not been execution-tested; public downloads use token=False.",
+    "requirements/*.observed.20261010.lock.txt records package versions, not a guaranteed clean-install lock.",
+    "Verify each file hash before loading Torch or pickle data.",
+    "Restore inputs outside the checkout and configure task paths before execution."
+  ],
+  "primary_sources": [
+    {
+      "url": "https://huggingface.co/api/models/H-Liu1997/emage_evaltools",
+      "id": "H-Liu1997/emage_evaltools",
+      "revision": "a57d1dfb1162c2a9cc20013f0ab212c21f211e78",
+      "license": "apache-2.0"
+    },
+    {
+      "url": "https://huggingface.co/api/models/AlayaLab/FloodDiffusionDownloads",
+      "id": "AlayaLab/FloodDiffusionDownloads",
+      "revision": "0cf2a8968769e07a92839944cc6d090cb437952a",
+      "license": "apache-2.0"
+    },
+    {
+      "url": "https://huggingface.co/api/models/facebook/hubert-large-ls960-ft/revision/ece5fabbf034c1073acae96d5401b25be96709d8",
+      "id": "facebook/hubert-large-ls960-ft",
+      "revision": "ece5fabbf034c1073acae96d5401b25be96709d8",
+      "license": "apache-2.0"
+    },
+    {
+      "url": "https://huggingface.co/api/datasets/H-Liu1997/BEAT2_Tools",
+      "id": "H-Liu1997/BEAT2_Tools",
+      "sha": "94f0ecb26dc66219b6a8216b9999d6b2eda505b5",
+      "license": "apache-2.0"
+    }
+  ]
+}

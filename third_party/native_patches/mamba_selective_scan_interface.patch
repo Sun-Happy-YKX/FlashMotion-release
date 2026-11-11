@@ -1,0 +1,15 @@
+--- a/mamba_ssm/ops/selective_scan_interface.py
++++ b/mamba_ssm/ops/selective_scan_interface.py
+@@ -353,7 +353,11 @@
+         dx_dbl[:, :delta_rank] = torch.einsum("dB,dr->Br", ddelta, delta_proj_weight)
+         dconv1d_out = rearrange(dconv1d_out, "b d l -> d (b l)")
+         dx_proj_weight = torch.einsum("Br,Bd->rd", dx_dbl, rearrange(conv1d_out, "b d l -> (b l) d"))
+-        dconv1d_out = torch.addmm(dconv1d_out, x_proj_weight.t(), dx_dbl.t(), out=dconv1d_out)
++        # Avoid the out= variant here. MeanFlow computes a JVP through the
++        # network, which requires differentiating this backward expression.
++        # PyTorch forbids autograd through addmm(..., out=...), while the
++        # functionally equivalent out-of-place form supports higher-order AD.
++        dconv1d_out = torch.addmm(dconv1d_out, x_proj_weight.t(), dx_dbl.t())
+         dconv1d_out = rearrange(dconv1d_out, "d (b l) -> b d l", b=x.shape[0], l=x.shape[-1])
+         # The kernel supports passing in a pre-allocated dx (e.g., in case we want to fuse the
+         # backward of conv1d with the backward of chunk).

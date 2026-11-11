@@ -1,0 +1,31 @@
+# Main genre M2D train / checkpoint scorer import closure, observed version pins.
+# Install torch cu128 FIRST; native Mamba/convolution/PyTorch3D are separate stages.
+# Uses released feature caches; raw Essentia extraction is outside this closure.
+# Not a complete transitive/build lock or a tested clean installation.
+numpy==1.23.5
+scipy==1.15.3
+accelerate==1.8.1
+einops==0.8.1
+tqdm==4.67.1
+packaging==25.0
+ninja==1.13.0
+triton==3.3.1
+transformers==4.57.0
+tokenizers==0.22.1
+huggingface-hub==0.35.3
+safetensors==0.6.2
+PyYAML==6.0.3
+librosa==0.11.0
+soundfile==0.13.1
+numba==0.56.4
+llvmlite==0.39.1
+scikit-learn==1.7.2
+joblib==1.5.2
+threadpoolctl==3.6.0
+matplotlib==3.10.7
+p-tqdm==1.4.2
+pathos==0.3.5
+wandb==0.19.11
+pillow==11.0.0
+iopath==0.1.10
+portalocker==4.3.0

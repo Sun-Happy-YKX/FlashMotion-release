@@ -1,0 +1,19 @@
+# Linux x86_64 bootstrap; pip runtime and native stages are in docs/environment.md.
+name: flashmotion-m2d
+channels:
+  - nvidia/label/cuda-12.8.0
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.10.12
+  - pip
+  - setuptools
+  - wheel
+  - git
+  - cmake
+  - make
+  - gcc_linux-64=12
+  - gxx_linux-64=12
+  - cuda-toolkit=12.8.0
+  - libsndfile
+  - ffmpeg

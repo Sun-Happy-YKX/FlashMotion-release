@@ -1,0 +1,207 @@
+{
+  "schema_version": 1,
+  "repo_id": "yangkaixing/FlashMotion-data",
+  "repo_type": "dataset",
+  "private": true,
+  "stage_root": "/safe/FlashMotion-data-stage",
+  "files": [
+    {
+      "path": "t2m/babel-streamed-part-001.tar",
+      "local_path": "t2m/babel-streamed-part-001.tar",
+      "sha256": "614c9945d391f87784f6124467083b36db16180dcfa56de5c7b1118b74216b69",
+      "bytes": 1440768000
+    },
+    {
+      "path": "t2m/babel-streamed-members.json",
+      "local_path": "t2m/babel-streamed-members.json",
+      "sha256": "b4c467ae57e421a7bc5c26ebb849777891e317596e208a64adb78b223f70bb76",
+      "bytes": 13013263
+    },
+    {
+      "path": "t2m/humanml3d-part-001.tar",
+      "local_path": "t2m/humanml3d-part-001.tar",
+      "sha256": "a74bda46fd6345a142881a997e8ff9847c0c59b3b983645e908bad4e83183ba9",
+      "bytes": 1810022400
+    },
+    {
+      "path": "t2m/humanml3d-part-002.tar",
+      "local_path": "t2m/humanml3d-part-002.tar",
+      "sha256": "2da0ce97622b2cdd6e4ee5354f3daef31904e6b1b782e57f7bbbd4845f95dd69",
+      "bytes": 1809920000
+    },
+    {
+      "path": "t2m/humanml3d-part-003.tar",
+      "local_path": "t2m/humanml3d-part-003.tar",
+      "sha256": "9e39f7525994668ef93fb016bf6403c358b5ce9e92ca2b4e804138ee952ad00b",
+      "bytes": 779141120
+    },
+    {
+      "path": "t2m/humanml3d-members.json",
+      "local_path": "t2m/humanml3d-members.json",
+      "sha256": "a774aaef090a423fc78fb747af6351221a9657b3403552d9ae268187297d7e9f",
+      "bytes": 17562937
+    },
+    {
+      "path": "t2m/text-features-part-001.tar",
+      "local_path": "t2m/text-features-part-001.tar",
+      "sha256": "b1997914533b1398729158dc0c9e448e1a721d375ef33c88bc2054c1e97b0f94",
+      "bytes": 492380160
+    },
+    {
+      "path": "t2m/text-features-members.json",
+      "local_path": "t2m/text-features-members.json",
+      "sha256": "a11a73053e5d063235b533074acfed3a87c805cffbba31f4070ea77c0d1f4b3a",
+      "bytes": 997
+    },
+    {
+      "path": "t2m/cohort311-part-001.tar",
+      "local_path": "t2m/cohort311-part-001.tar",
+      "sha256": "37f194b83944bf376a00374e958bb35c5ae2475f1eacc10607e7fab6249c06ce",
+      "bytes": 123371520
+    },
+    {
+      "path": "t2m/cohort311-members.json",
+      "local_path": "t2m/cohort311-members.json",
+      "sha256": "ca370bfeaf02354f73f38ca2540304af16e4ec0f16bf91fb047fa7989959f759",
+      "bytes": 90807
+    },
+    {
+      "path": "m2d/canonical-stable-v2-part-001.tar",
+      "local_path": "m2d/canonical-stable-v2-part-001.tar",
+      "sha256": "a5be35b88adc3ca18f0d7c345dec5415e7c5d0c5ce015e9d821f4266a301f270",
+      "bytes": 63774720
+    },
+    {
+      "path": "m2d/canonical-stable-v2-part-002.tar",
+      "local_path": "m2d/canonical-stable-v2-part-002.tar",
+      "sha256": "6049bd6e478fadf4c539f04ffb20a27cb5823f20b56d19632ce1ee2707e6a965",
+      "bytes": 3553792000
+    },
+    {
+      "path": "m2d/canonical-stable-v2-members.json",
+      "local_path": "m2d/canonical-stable-v2-members.json",
+      "sha256": "8b08de8c8f15fb64c0884830d04611ff9068e7f51fb08582c90cf97fbf1ea4f3",
+      "bytes": 1386
+    },
+    {
+      "path": "m2d/finedance-source-part-001.tar",
+      "local_path": "m2d/finedance-source-part-001.tar",
+      "sha256": "ec5911171f6c981a5d22f8a130d2f5fb6461bf6938a1f35de5cb2be02b2c4f46",
+      "bytes": 63426560
+    },
+    {
+      "path": "m2d/finedance-source-part-002.tar",
+      "local_path": "m2d/finedance-source-part-002.tar",
+      "sha256": "12303934a4e951d719bb2e8eebac14d14fae1d58b84594bb0ad95c41678a43d5",
+      "bytes": 3534684160
+    },
+    {
+      "path": "m2d/finedance-source-part-003.tar",
+      "local_path": "m2d/finedance-source-part-003.tar",
+      "sha256": "9feea7c632af8d2c09e1a2d52024c40d3a7574da1ee840db4bae0a9862106467",
+      "bytes": 63764480
+    },
+    {
+      "path": "m2d/finedance-source-part-004.tar",
+      "local_path": "m2d/finedance-source-part-004.tar",
+      "sha256": "bab19e6b9ad7bad2f3df97a525f3e5a1cfa4a22aff2f2b90e6947b9e0448bb74",
+      "bytes": 3553792000
+    },
+    {
+      "path": "m2d/finedance-source-part-005.tar",
+      "local_path": "m2d/finedance-source-part-005.tar",
+      "sha256": "5b538d74d3d89e0d76bff0ac49176e7a57ab74dde442e745b584fd05193afa2b",
+      "bytes": 680417280
+    },
+    {
+      "path": "m2d/finedance-source-members.json",
+      "local_path": "m2d/finedance-source-members.json",
+      "sha256": "3ac34b1aacc44f3f3e87d7f5e8d96a0b74ce86f4cf7fedd954fa78c19b910e12",
+      "bytes": 128752
+    },
+    {
+      "path": "s2g/beat2-selected-raw-part-001.tar",
+      "local_path": "s2g/beat2-selected-raw-part-001.tar",
+      "sha256": "2e5c6a4e252eccc6b65c6418f1a00bb96ea272f0586ed395f614df2f3d8db54a",
+      "bytes": 1798615040
+    },
+    {
+      "path": "s2g/beat2-selected-raw-part-002.tar",
+      "local_path": "s2g/beat2-selected-raw-part-002.tar",
+      "sha256": "e8952e2290f26eecc097bcb3e807ec065df1cdb1e98194499ad60510af3d2f9d",
+      "bytes": 1799147520
+    },
+    {
+      "path": "s2g/beat2-selected-raw-part-003.tar",
+      "local_path": "s2g/beat2-selected-raw-part-003.tar",
+      "sha256": "3af4c0c426108e263194eaf52130349220b6416c4fc21384fb6ab8568a5b6710",
+      "bytes": 1795717120
+    },
+    {
+      "path": "s2g/beat2-selected-raw-part-004.tar",
+      "local_path": "s2g/beat2-selected-raw-part-004.tar",
+      "sha256": "fd44ffde8fe08c4256e3ad692c5c2e2e9b1ec12996d029896e98c86c324678a0",
+      "bytes": 1799966720
+    },
+    {
+      "path": "s2g/beat2-selected-raw-part-005.tar",
+      "local_path": "s2g/beat2-selected-raw-part-005.tar",
+      "sha256": "505ebd3b6b198faf82d86e8453844e8e99e377e8c53b0cf643c4cce8c3d3f561",
+      "bytes": 485693440
+    },
+    {
+      "path": "s2g/beat2-selected-raw-members.json",
+      "local_path": "s2g/beat2-selected-raw-members.json",
+      "sha256": "cb2054943a40174d4ac7972468d23e7e8669c5ffdf5c5a7006cf5986a0c8f309",
+      "bytes": 1374193
+    },
+    {
+      "path": "t2m/evaluation/canonical_gt.npz",
+      "local_path": "t2m/evaluation/canonical_gt.npz",
+      "sha256": "9ed7762556bb307bc147358215f849f2f43a20676f703445408269beafd4af9d",
+      "bytes": 1802056
+    },
+    {
+      "path": "s2g/cache-exact-part-001.tar",
+      "local_path": "s2g/cache-exact-part-001.tar",
+      "sha256": "6d64220d461198010dafb18f0ee1c26c9219660334bbbcc1a360165d77ddce33",
+      "bytes": 1795676160
+    },
+    {
+      "path": "s2g/cache-exact-part-002.tar",
+      "local_path": "s2g/cache-exact-part-002.tar",
+      "sha256": "1b070ad8558aff78523f78c31ecd9eb003dcaf58a1bdf7d642ddb5550dd2d12b",
+      "bytes": 1792512000
+    },
+    {
+      "path": "s2g/cache-exact-part-003.tar",
+      "local_path": "s2g/cache-exact-part-003.tar",
+      "sha256": "2743b15f84ca596f5cafa500ccb6cfc87efee06211ef570a11efac6a494af717",
+      "bytes": 1797181440
+    },
+    {
+      "path": "s2g/cache-exact-part-004.tar",
+      "local_path": "s2g/cache-exact-part-004.tar",
+      "sha256": "302d631d3293a61e4638ac86a40f7d5bac93ed09b9c32357196a2e0db1e6c8db",
+      "bytes": 1799741440
+    },
+    {
+      "path": "s2g/cache-exact-part-005.tar",
+      "local_path": "s2g/cache-exact-part-005.tar",
+      "sha256": "f216968893693cb8288bf87b45101542a1e24d7e648500a15835e9ddcdd88a41",
+      "bytes": 1795194880
+    },
+    {
+      "path": "s2g/cache-exact-part-006.tar",
+      "local_path": "s2g/cache-exact-part-006.tar",
+      "sha256": "4b24bca7c43b904d4c83de063689a3a91643f880aca709fbe43f04e8a60acc1f",
+      "bytes": 526612480
+    },
+    {
+      "path": "s2g/cache-exact-members.json",
+      "local_path": "s2g/cache-exact-members.json",
+      "sha256": "9cd707880fd2bd620c009c9048fb1b5a78adbb6dec0a80251aa2ac7be1376565",
+      "bytes": 385675
+    }
+  ]
+}

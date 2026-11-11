@@ -1,0 +1,31 @@
+{
+  "created_at": 1790153722.1647482,
+  "code": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/code",
+  "source_manifest": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_restart_8000ep_20260922/manifest.json",
+  "runs": [
+    {
+      "setting": "adain_selection",
+      "host": "m01",
+      "hostname": "bubuyang-mib-0922-135948-m01-1x8-worker-0",
+      "output": "/efs/yangkaixing/FlowerDance_T2M_Long/runs/t2m_adain_selection_8000ep_20260923/adain_selection",
+      "cross_modal_fusion": "adain",
+      "condition_selection": true,
+      "direction_fusion": "sum",
+      "floor_weight": 0.0,
+      "gpu_ids": "0,1,2,3,4,5,6,7",
+      "world_size": 8,
+      "batch_per_gpu": 288,
+      "global_batch_size": 2304,
+      "max_steps": 112000,
+      "max_epochs": 8000,
+      "expected_steps_per_epoch": 14,
+      "seed": 42,
+      "start_from": "random_initialization",
+      "port": 29893,
+      "eval_gpu": 0,
+      "eval_variant": "adain_selection_8000ep_20260923",
+      "eval_output": "/efs/yangkaixing/FlowerDance_T2M_Long/eval/t2m_ablation_periodic/adain_selection_8000ep_20260923"
+    }
+  ],
+  "protocol": "Same frozen 20260922 BABEL-long-311; 1/2/4-step every 50 actual epochs"
+}

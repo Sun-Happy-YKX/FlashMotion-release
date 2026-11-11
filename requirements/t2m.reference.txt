@@ -1,0 +1,16 @@
+# Reference imports, NOT a captured environment lock and NOT a verified install recipe.
+# The portable dry-run entry point needs only Python >=3.10 standard library.
+# Actual execution needs a compatible Linux/NVIDIA CUDA PyTorch runtime.
+# Exact original Python/torch/CUDA/compiler/wheel versions are still pending.
+# Do not install into a live training environment automatically.
+numpy
+torch
+accelerate
+einops
+mamba-ssm
+# causal-conv1d is an optional direct import, but kernel/wheel compatibility must be checked.
+causal-conv1d
+# Transformer snapshots retain top-level Mamba imports even though their mixers differ.
+# External FloodDiffusion metrics/tools source is supplied through flood_root, not pip.
+# Evaluation additionally requires deps/glove and deps/t2m/meta + humanml3d evaluator weights.
+# Precomputed embeddings.npy/text_index.json mean the training entry does not run UMT5 extraction.

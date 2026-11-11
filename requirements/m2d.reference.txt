@@ -1,0 +1,35 @@
+# REFERENCE ONLY: selected dependencies from the local FlowerDance reference
+# requirements.txt, SHA256 dd1572f8bee9a04d5670272fdfc5a93a3a0d971848c16844824972011c05d1ec.
+# Reference clone commit: 1462e399ead188a611fd67e7241b5a2d5ffb10de.
+# This is NOT the selected run's complete environment lock or a tested install.
+# Archived CPU audit: Python 3.10.12, NumPy 1.23.5, torch distribution 2.7.1+cu128.
+# Native extension/runtime metadata and actual training environment are pending.
+# run.py planning/self-tests require ONLY Python stdlib, not this file.
+# CUDA wheels need the matching trusted PyTorch wheel index. No install is automatic.
+accelerate==1.8.1
+numpy==1.23.5
+torch==2.7.1+cu128
+torchaudio==2.7.1+cu128
+torchvision==0.22.1+cu128
+triton==3.3.1
+scipy==1.15.3
+scikit-learn==1.7.2
+einops==0.8.1
+einx==0.3.0
+librosa==0.11.0
+numba==0.56.4
+llvmlite==0.39.1
+soundfile==0.13.1
+matplotlib==3.10.7
+p-tqdm==1.4.2
+tqdm==4.67.1
+wandb==0.19.11
+smplx==0.1.28
+transformers==4.57.0
+essentia==2.1b6.dev1110
+-e git+https://github.com/Dao-AILab/causal-conv1d.git@857842b10546d86aaf05c52570a51fba2eec04d2#egg=causal_conv1d
+-e git+https://github.com/state-spaces/mamba.git@10b5d6358f27966f6a40e4bf0baa17a460688128#egg=mamba_ssm
+-e git+https://github.com/facebookresearch/pytorch3d.git@75ebeeaea0908c5527e7b1e305fbc7681382db47#egg=pytorch3d
+# Keep license/citation notices for dependencies and separately licensed assets.
+# FK in the frozen vis.SMPLSkeleton uses bundled offsets; do not add an invented
+# body-model dependency to the formal trainer. Rendering/other tools may differ.

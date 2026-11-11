@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "kind": "external_author_reported_reference_not_our_rerun",
+  "paper": "SemTalk: Holistic Co-speech Motion Generation with Frame-level Semantic Emphasis, ICCV 2025, Table 1",
+  "source": "https://arxiv.org/html/2412.16563v4",
+  "protocol": "BEAT2 speaker2/Scott paper protocol; not controlled-comparable with 25-speaker training",
+  "raw_units": true,
+  "display_scales_in_original_paper": {"FGD": "reported number x 10^-1", "BC": "reported number x 10^-1", "DIV": "reported raw", "MSE": "reported number x 10^-8", "LVD": "reported number x 10^-5"},
+  "rows": [
+    {"method": "FaceFormer", "fgd": null, "bc": null, "div": null, "mse": 7.787e-8, "lvd": 7.593e-5},
+    {"method": "CodeTalker", "fgd": null, "bc": null, "div": null, "mse": 8.026e-8, "lvd": 7.766e-5},
+    {"method": "CaMN", "fgd": 0.6644, "bc": 0.6769, "div": 10.86, "mse": null, "lvd": null},
+    {"method": "DSG", "fgd": 0.8811, "bc": 0.7241, "div": 11.49, "mse": null, "lvd": null},
+    {"method": "LivelySpeaker", "fgd": 1.180, "bc": 0.6659, "div": 11.28, "mse": null, "lvd": null},
+    {"method": "Habibie et al.", "fgd": 0.9040, "bc": 0.7716, "div": 8.213, "mse": 8.614e-8, "lvd": 8.043e-5},
+    {"method": "TalkSHOW", "fgd": 0.6209, "bc": 0.6947, "div": 13.47, "mse": 7.791e-8, "lvd": 7.771e-5},
+    {"method": "EMAGE", "fgd": 0.5512, "bc": 0.7724, "div": 13.06, "mse": 7.680e-8, "lvd": 7.556e-5},
+    {"method": "DiffSHEG", "fgd": 0.8986, "bc": 0.7142, "div": 11.91, "mse": 7.665e-8, "lvd": 8.673e-5},
+    {"method": "SemTalk", "fgd": 0.4278, "bc": 0.7770, "div": 12.91, "mse": 6.153e-8, "lvd": 6.938e-5}
+  ],
+  "all_speakers_author_release": {
+    "source": "https://github.com/Xiangyue-Zhang/SemTalk/blob/main/results/all_speakers/best_run.json",
+    "protocol": "25 BEAT2 English speakers; coarse10epoch/local1epoch test-FGD checkpoint search; different from Scott paper",
+    "base": {"seed": 43, "epoch": 400, "fgd": 0.41249611663159946},
+    "sparse": {"seed": 43, "epoch": 246, "fgd": 0.3556307244277832, "bc": 0.5096990560447426, "div": 8.40927975570277, "mse": 4.438668717439196e-8, "lvd": 1.4350174388422715e-5},
+    "controlled_comparison_to_this_experiment": false
+  },
+  "requested_extra_baselines": ["StreamTalk", "SemTalk", "EMAGE", "CaMN", "GestureLSM", "DisCo", "EchoMask"],
+  "extra_baseline_warning": "StreamTalk, GestureLSM, DisCo, EchoMask are not rows in SemTalk Table1. Their same-protocol rerun results must be obtained from original predictions/checkpoints, not copied from this table or stale body22 results."
+}

@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "repo_id": "yangkaixing/FlashMotion-checkpoints",
+  "repo_type": "model",
+  "private": true,
+  "stage_root": "/safe/FlashMotion-models",
+  "files": [
+    {
+      "path": "s2g/body_models/smplx_models/smplx/SMPLX_NEUTRAL_2020.npz",
+      "local_path": "s2g/body_models/smplx_models/smplx/SMPLX_NEUTRAL_2020.npz",
+      "sha256": "bdf06146e27d92022fe5dadad3b9203373f6879eca8e4d8235359ee3ec6a5a74",
+      "bytes": 167264530
+    }
+  ]
+}
