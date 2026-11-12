@@ -14,6 +14,7 @@
   <a href="https://sun-happy-ykx.github.io/FlashMotion-Project/"><img src="https://img.shields.io/badge/Project_Page-Website-2463a5?logo=githubpages" alt="Project_Page"></a>
   <a href="https://github.com/Sun-Happy-YKX/FlashMotion-release"><img src="https://img.shields.io/badge/Code-GitHub-24292f?logo=github" alt="Code"></a>
   <a href="https://huggingface.co/yangkaixing/FlashMotion-models"><img src="https://img.shields.io/badge/Checkpoints-Hugging_Face-ffd21e?logo=huggingface" alt="Checkpoints"></a>
+  <a href="https://huggingface.co/datasets/yangkaixing/FlashMotion-data"><img src="assets/flashmotion-data-badge.svg" alt="Data on Hugging Face (access required)"></a>
 </p>
 
 FlashMotion supports three tasks with **six pretrained checkpoints**: one
@@ -35,9 +36,9 @@ The table lists the six checkpoints used in the paper.
 
 - **Code:** task-specific training and inference source, configuration templates,
   evaluator code and documentation. No large data or model binaries in Git.
-- **Data:** 33 verified package/metadata files, **35.19 GB** in total, organized
-  under `t2m/`, `s2g/` and `m2d/`. The S2G cache is preprocessed BEAT2 input data
-  for the recorded pipeline; it belongs here, not in a fourth repository.
+- **Data:** [FlashMotion-data on Hugging Face](https://huggingface.co/datasets/yangkaixing/FlashMotion-data) (access required).
+  The archive contains 33 verified files (**35.19 GB**) across `t2m/`, `s2g/` and
+  `m2d/`, including the preprocessed BEAT2 cache for speech-to-gesture.
 - **Checkpoints:** the [six paper checkpoints](https://huggingface.co/yangkaixing/FlashMotion-models/tree/fcf613fa1742b1655c7299e10de8c8dfc332a8c6).
   Evaluator assets and the SMPL-X body model come from their upstream providers.
 
