@@ -24,13 +24,13 @@ evaluation assets are subject to their original access terms.
 
 ## 🎯 Three tasks
 
-| Task | Dataset | 1-step selection | 4-step selection | Train / inference guide |
-| --- | --- | --- | --- | --- |
-| 💬 Text-to-motion (T2M) | BABEL-long | epoch 7150 | epoch 5850 | [T2M](docs/t2m.md) |
-| 🗣️ Speech-to-gesture (S2G) | BEAT2 | epoch 3200 | epoch 1500 | [S2G](docs/s2g.md) |
-| 🎵 Music-to-dance (M2D) | FineDance | epoch 2250 | epoch 2100 | [M2D](docs/m2d.md) |
+| Task | Dataset | Train / inference guide |
+| --- | --- | --- |
+| 💬 Text-to-motion (T2M) | BABEL-long | [T2M](docs/t2m.md) |
+| 🗣️ Speech-to-gesture (S2G) | BEAT2 | [S2G](docs/s2g.md) |
+| 🎵 Music-to-dance (M2D) | FineDance | [M2D](docs/m2d.md) |
 
-The table lists the six checkpoints used in the paper.
+Each task guide includes training, inference and checkpoint details.
 
 ## 📦 Code, data and checkpoints
 
