@@ -1,4 +1,4 @@
-"""Fetch SHA-pinned artifacts from an immutable private HF commit."""
+"""Fetch SHA-pinned artifacts from an immutable public or private HF commit."""
 
 from __future__ import annotations
 
@@ -38,14 +38,15 @@ def fetch_manifest(
     receipt["partial_files"] = []
     phase = "authentication"
     try:
-        backend = backend or a.hub_backend()
-        a.require_owner(backend, manifest)
-        phase = "private_revision_check"
+        backend = backend or a.hub_backend(token=True if manifest.private else False)
+        if manifest.private:
+            a.require_owner(backend, manifest)
+        phase = "revision_visibility_check"
         info = backend.api.repo_info(
             repo_id=manifest.repo_id, repo_type=manifest.repo_type,
             revision=revision, files_metadata=True,
         )
-        a.require_private(info)
+        a.require_visibility(info, manifest)
         if a.revision_hash(a.attr(info, "sha")) != revision:
             a.fail("The remote revision does not match the requested commit.", "revision_mismatch")
         remote = a.remote_entries(info)
@@ -84,10 +85,10 @@ def fetch_manifest(
                 "path": entry.path, "local_path": entry.local_path,
                 "sha256": entry.sha256, "bytes": entry.bytes, "method": method,
             })
-        phase = "final_private_check"
-        a.require_private(backend.api.repo_info(
+        phase = "final_visibility_check"
+        a.require_visibility(backend.api.repo_info(
             repo_id=manifest.repo_id, repo_type=manifest.repo_type, revision=revision
-        ))
+        ), manifest)
         receipt["status"] = "verified"
         return receipt
     except Exception as error:

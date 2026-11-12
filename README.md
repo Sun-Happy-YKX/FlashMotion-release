@@ -79,7 +79,7 @@ First complete [environment setup](docs/environment.md),
 
 ```bash
 export DATA_ROOT=/path/to/restored/FlashMotion-data
-export MODEL_ROOT=/path/to/downloaded/FlashMotion-checkpoints
+export MODEL_ROOT=/path/to/downloaded/FlashMotion-models
 export CONFIG_ROOT=/path/to/your/local/configs
 export OUTPUT_ROOT=/path/to/new/FlashMotion-runs
 mkdir -p "$OUTPUT_ROOT"

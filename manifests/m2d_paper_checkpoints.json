@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "paper": "https://arxiv.org/abs/2611.13626v1",
+  "table": "II: Quantitative comparison on FineDance",
+  "repo_id": "yangkaixing/FlashMotion-models",
+  "revision": "fcf613fa1742b1655c7299e10de8c8dfc332a8c6",
+  "metric_order": ["FID_k", "FID_g", "DIV_k", "DIV_g", "BAS"],
+  "checkpoints": [
+    {
+      "sampling_steps": 1,
+      "epoch": 2250,
+      "path": "m2d/genre/train-2250.pt",
+      "sha256": "b6f3860cc9c3a5ce8d62bbe419fa50f145654a30af5cffdedc94461285f483e7",
+      "bytes": 1320466345,
+      "paper_display": ["18.32", "28.48", "9.48", "7.54", "0.237"],
+      "recorded_metrics": [18.32431170962768, 28.483129581765688, 9.483614144076306, 7.542937374497992, 0.2365293285130603]
+    },
+    {
+      "sampling_steps": 4,
+      "epoch": 2100,
+      "path": "m2d/genre/train-2100.pt",
+      "sha256": "83ef84e3455fd12b1fccce5fcce21e8443208ad223eacd2f450d08614b45bcf2",
+      "bytes": 1320466345,
+      "paper_display": ["15.15", "21.13", "9.55", "6.58", "0.240"],
+      "recorded_metrics": [15.146904532157834, 21.126520572962747, 9.551802074368904, 6.5767893000573725, 0.23983083171695144]
+    }
+  ]
+}

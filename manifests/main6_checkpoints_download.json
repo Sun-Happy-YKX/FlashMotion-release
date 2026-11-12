@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "repo_id": "yangkaixing/FlashMotion-checkpoints",
+  "repo_id": "yangkaixing/FlashMotion-models",
   "repo_type": "model",
-  "private": true,
+  "private": false,
   "stage_root": "/safe/FlashMotion-models",
   "files": [
     {
@@ -36,9 +36,9 @@
       "bytes": 1320466345
     },
     {
-      "path": "m2d/genre/train-1750.pt",
-      "local_path": "m2d/genre/train-1750.pt",
-      "sha256": "9de52b6c5cb94799191e13aec6126be4c0700cc4e1de2f83e2810c4374b797ae",
+      "path": "m2d/genre/train-2100.pt",
+      "local_path": "m2d/genre/train-2100.pt",
+      "sha256": "83ef84e3455fd12b1fccce5fcce21e8443208ad223eacd2f450d08614b45bcf2",
       "bytes": 1320466345
     }
   ]

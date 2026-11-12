@@ -45,6 +45,7 @@ class ArtifactManifest:
     stage_root: Path
     code_root: Path
     files: tuple[ArtifactFile, ...]
+    private: bool = True
 
 
 @dataclass
@@ -206,8 +207,8 @@ def load_manifest(
         fail("The manifest must contain exactly the documented schema fields.", "invalid_manifest")
     if type(data["schema_version"]) is not int or data["schema_version"] != 1:
         fail("Only manifest schema_version 1 is supported.", "invalid_manifest")
-    if data["private"] is not True:
-        fail("Artifact repositories must explicitly be private.", "private_required")
+    if type(data["private"]) is not bool:
+        fail("Repository visibility must explicitly be a boolean.", "invalid_manifest")
     repo_id = data["repo_id"]
     if not isinstance(repo_id, str) or len(repo_id.split("/")) != 2:
         fail("repo_id must have the form owner/name.", "invalid_repo")
@@ -240,7 +241,7 @@ def load_manifest(
         if type(row["bytes"]) is not int or row["bytes"] < 0:
             fail("Each artifact needs a nonnegative integer byte count.", "invalid_manifest")
         entries.append(ArtifactFile(remote, local, row["sha256"].lower(), row["bytes"]))
-    manifest = ArtifactManifest(repo_id, data["repo_type"], stage, root, tuple(entries))
+    manifest = ArtifactManifest(repo_id, data["repo_type"], stage, root, tuple(entries), data["private"])
     for entry in manifest.files:
         local_file(manifest, entry, must_exist=verify_local)
         if verify_local:
@@ -253,7 +254,7 @@ def attr(value: Any, name: str, default=None):
     return value.get(name, default) if isinstance(value, dict) else getattr(value, name, default)
 
 
-def hub_backend() -> HubBackend:
+def hub_backend(*, token=True) -> HubBackend:
     """Import the official SDK only for live operations; never read/print tokens."""
     try:
         from huggingface_hub import CommitOperationAdd, HfApi, hf_hub_download
@@ -261,7 +262,7 @@ def hub_backend() -> HubBackend:
     except ImportError:
         fail("Install huggingface_hub for live artifact operations.", "missing_dependency")
     return HubBackend(
-        HfApi(endpoint=HF_ENDPOINT, token=True),
+        HfApi(endpoint=HF_ENDPOINT, token=token),
         CommitOperationAdd, hf_hub_download, RepositoryNotFoundError,
     )
 
@@ -275,6 +276,13 @@ def require_owner(backend: HubBackend, manifest: ArtifactManifest) -> None:
 def require_private(info: Any) -> None:
     if attr(info, "private") is not True:
         fail("The remote repository is not confirmed private; no visibility change is permitted.", "public_repository")
+
+
+def require_visibility(info: Any, manifest: ArtifactManifest) -> None:
+    if manifest.private:
+        require_private(info)
+    elif attr(info, "private") is not False:
+        fail("The remote repository is not confirmed public.", "visibility_mismatch")
 
 
 def is_missing_repository(backend: HubBackend, error: Exception) -> bool:
@@ -314,7 +322,7 @@ def downloaded_verified(
         filename = backend.download(
             repo_id=manifest.repo_id, repo_type=manifest.repo_type,
             filename=entry.path, revision=revision, local_dir=temp,
-            token=True, endpoint=HF_ENDPOINT,
+            token=True if manifest.private else False, endpoint=HF_ENDPOINT,
         )
         downloaded = Path(filename).absolute()
         reject_links(downloaded)
@@ -329,7 +337,7 @@ def new_receipt(operation: str, manifest: ArtifactManifest) -> dict[str, Any]:
     return {
         "schema_version": 1, "operation": operation, "status": "in_progress",
         "repo_id": manifest.repo_id, "repo_type": manifest.repo_type,
-        "private_required": True, "created_at_utc": datetime.now(timezone.utc).isoformat(),
+        "private_required": manifest.private, "created_at_utc": datetime.now(timezone.utc).isoformat(),
         "revision": None, "commits": [], "verified_files": [],
     }
 
@@ -337,7 +345,7 @@ def new_receipt(operation: str, manifest: ArtifactManifest) -> dict[str, Any]:
 def dry_run_plan(operation: str, manifest: ArtifactManifest, revision=None) -> dict[str, Any]:
     return {
         "status": "dry_run", "operation": operation, "repo_id": manifest.repo_id,
-        "repo_type": manifest.repo_type, "private_required": True,
+        "repo_type": manifest.repo_type, "private_required": manifest.private,
         "file_count": len(manifest.files), "stage_root": str(manifest.stage_root),
         "revision": revision, "authenticated": False,
         "remote_verified": False, "writes_performed": False,

@@ -1,17 +1,39 @@
-# Private artifact downloads and local paths
-| Archive | Immutable verified revision | Scope |
-| --- | --- | --- |
-| HF Model `yangkaixing/FlashMotion-checkpoints` | `1e1ba4135613fcba36f0abf72de9fcde61ef549a` | six default FlashMotion checkpoints, two retained historical selections, ten evaluator dependency files and one required neutral SMPL-X dependency |
-| HF Dataset `yangkaixing/FlashMotion-data` | `52124dfa623e878aa8e4118d4066eb9135a8ca05` | complete 33 data package/metadata files including exact S2G cache; 35,189,672,706 bytes |
+# Artifact downloads and local paths
 
-## Download and verify
+## Paper checkpoints
 
-Use the normal cached HF login, never a token in an argument or source file.
+The six paper checkpoints are public in
+[`yangkaixing/FlashMotion-models`](https://huggingface.co/yangkaixing/FlashMotion-models/tree/fcf613fa1742b1655c7299e10de8c8dfc332a8c6).
+Use immutable revision `fcf613fa1742b1655c7299e10de8c8dfc332a8c6` and
+[`main6_checkpoints_download.json`](../manifests/main6_checkpoints_download.json).
+M2D uses epoch **2250 / 1-step** and epoch **2100 / 4-step**; their identities
+and FineDance paper metrics are in
+[`m2d_paper_checkpoints.json`](../manifests/m2d_paper_checkpoints.json).
+
 Run from the code checkout; replace `/safe` with an absolute directory you own
-outside the checkout, not a filesystem root. Create `/safe/receipts` first.
+outside the checkout. Create `/safe/receipts` first. Public checkpoint downloads
+do not require an HF login.
 
 ```bash
-python -B tools/fetch_hf.py manifests/main6_checkpoints_download.json --revision 1e1ba4135613fcba36f0abf72de9fcde61ef549a --stage-root /safe/FlashMotion-models --receipt /safe/receipts/models.json
+python -B tools/fetch_hf.py manifests/main6_checkpoints_download.json --revision fcf613fa1742b1655c7299e10de8c8dfc332a8c6 --stage-root /safe/FlashMotion-models --receipt /safe/receipts/models.json
+```
+
+## Data and evaluation dependencies
+
+Datasets and third-party evaluation/body assets require separate access under
+their providers' terms. The recorded restricted archives below supply these
+dependencies; they are not the public paper-checkpoint download source.
+
+| Archive | Immutable verified revision | Scope |
+| --- | --- | --- |
+| Restricted dependency archive `yangkaixing/FlashMotion-checkpoints` | `1e1ba4135613fcba36f0abf72de9fcde61ef549a` | ten evaluator dependency files and one neutral SMPL-X dependency; access required |
+| HF Dataset `yangkaixing/FlashMotion-data` | `52124dfa623e878aa8e4118d4066eb9135a8ca05` | complete 33 data package/metadata files including exact S2G cache; 35,189,672,706 bytes |
+
+The restricted-archive helper uses the owner's cached HF login. Other users
+obtain these dependencies from their original providers and assemble the paths
+below. Never put a token in an argument or source file.
+
+```bash
 python -B tools/fetch_hf.py manifests/evaluator_assets_download.json --revision 1e1ba4135613fcba36f0abf72de9fcde61ef549a --stage-root /safe/FlashMotion-models --receipt /safe/receipts/evaluators.json
 python -B tools/fetch_hf.py manifests/s2g_body_download.json --revision 1e1ba4135613fcba36f0abf72de9fcde61ef549a --stage-root /safe/FlashMotion-models --receipt /safe/receipts/smplx.json
 python -B tools/fetch_hf.py manifests/data_download_complete.json --revision 52124dfa623e878aa8e4118d4066eb9135a8ca05 --stage-root /safe/FlashMotion-data-stage --receipt /safe/receipts/data.json

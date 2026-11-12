@@ -206,6 +206,58 @@ class ArtifactTests(unittest.TestCase):
             )
         self.assertFalse(target.exists())
 
+    def test_public_fetch_verifies_bytes_without_owner_login(self):
+        self.data["private"] = False
+        self.save()
+        api = FakeApi(private=False, owner="another-user")
+        api.current_sha = COMMITTED
+        api.content["checkpoints/one.bin"] = self.payload
+        backend = self.backend(api)
+        target = self.root / "public-download"
+        with patch.object(a, "hub_backend", return_value=backend) as factory:
+            receipt = fetch_hf.fetch_manifest(
+                self.filename, COMMITTED, stage_root=target, code_root=self.code
+            )
+        factory.assert_called_once_with(token=False)
+        self.assertEqual(api.whoami_calls, 0)
+        self.assertIs(backend.download.call_args.kwargs["token"], False)
+        self.assertEqual((target / "weights" / "one.bin").read_bytes(), self.payload)
+        self.assertEqual(receipt["status"], "verified")
+        self.assertIs(receipt["private_required"], False)
+
+    def test_public_manifest_refuses_private_remote_before_write(self):
+        self.data["private"] = False
+        self.save()
+        target = self.root / "visibility-mismatch"
+        with self.assertRaises(a.ArtifactError):
+            fetch_hf.fetch_manifest(
+                self.filename, COMMITTED, stage_root=target,
+                backend=self.backend(FakeApi(private=True)), code_root=self.code,
+            )
+        self.assertFalse(target.exists())
+
+    def test_public_fetch_rejects_corrupt_download(self):
+        self.data["private"] = False
+        self.save()
+        api = FakeApi(private=False)
+        api.current_sha = COMMITTED
+        api.content["checkpoints/one.bin"] = self.payload
+        target = self.root / "public-bad-download"
+        with self.assertRaises(a.ArtifactError):
+            fetch_hf.fetch_manifest(
+                self.filename, COMMITTED, stage_root=target,
+                backend=self.backend(api, bad_download=True), code_root=self.code,
+            )
+        self.assertFalse((target / "weights" / "one.bin").exists())
+
+    def test_visibility_requires_explicit_boolean(self):
+        for value in (None, 0, 1, "false", "true"):
+            with self.subTest(value=value):
+                self.data["private"] = value
+                self.save()
+                with self.assertRaises(a.ArtifactError):
+                    a.load_manifest(self.filename, code_root=self.code)
+
     def test_fetch_refuses_wrong_existing_bytes_before_network(self):
         target = self.root / "existing"
         (target / "weights").mkdir(parents=True)

@@ -266,7 +266,7 @@ def build_plan(phase: str, version: str, paths: dict[str, Any], repo_root: Path 
             ["data/dataset_backups_stable_v2/test_tensor_dataset.pkl", "data/test/motions_sliced", "data/test/baseline_feats"])],
         "private_artifact_targets": [
             {"repo_id": "yangkaixing/FlashMotion-data", "repo_type": "dataset", "private": True, "prefix": "m2d/"},
-            {"repo_id": "yangkaixing/FlashMotion-checkpoints", "repo_type": "model", "private": True, "prefix": "m2d/"},
+            {"repo_id": "yangkaixing/FlashMotion-models", "repo_type": "model", "private": False, "prefix": "m2d/"},
         ],
         "quality_eval": {"status": "REPAIRED_SCORER_COLLECTED_EXECUTION_UNVERIFIED",
                          "release_source": SNAPSHOT_RELATIVE + "/provenance/music_corrected_eval_20260930.py",
@@ -282,7 +282,7 @@ def build_plan(phase: str, version: str, paths: dict[str, Any], repo_root: Path 
             "For training only: independently reproduce historical controller guards, identity/locks/no duplicate, four free slots (>60000 MiB each), successful verify exit and two metric JSONs. Independent single-checkpoint eval does not require these training proofs.",
             "The verify phase performs two real training updates, checkpoint save and old evaluation; it is not CPU verification.",
             "Preserve fresh initialization, no resume/pretrained/smoke reuse, 4x64 batch, 240 frames and no AMP; independently confirm 77 updates/epoch on exact data.",
-            "Paper checkpoint selection is recorded separately using a no-PFC criterion. Evaluate the supplied checkpoint with the paper-protocol scorer; this entry does not rerank checkpoints. The native training scorer uses a different protocol.",
+            "Paper checkpoints and their FineDance metric rows are recorded in manifests/m2d_paper_checkpoints.json. Evaluate the supplied checkpoint with the paper-protocol scorer; this entry does not rerank checkpoints. The native training scorer uses a different protocol.",
             "Applicable inherited skeleton/body/render asset licenses and written FineDance private-distribution scope must be retained; any actually used external body model needs its own verified license/assets.",
         ],
         "evidence_paths_not_validated": {key: paths[key] for key in (

@@ -13,6 +13,17 @@ before running commands from the repository root.
 
 Use the [paper checkpoint manifest](https://huggingface.co/yangkaixing/FlashMotion-models/blob/fcf613fa1742b1655c7299e10de8c8dfc332a8c6/checkpoint-sha256.json).
 
+These checkpoints correspond to the FineDance rows in
+[paper Table II](https://arxiv.org/html/2611.13626v1):
+
+| Steps | Epoch | FID_k | FID_g | DIV_k | DIV_g | BAS |
+| --- | --- | --- | --- | --- | --- | --- |
+| 1 | 2250 | 18.32 | 28.48 | 9.48 | 7.54 | 0.237 |
+| 4 | 2100 | 15.15 | 21.13 | 9.55 | 6.58 | 0.240 |
+
+The [M2D checkpoint record](../manifests/m2d_paper_checkpoints.json) binds
+each row to its file SHA256 and recorded full-precision quality metrics.
+
 Restore the native 35D music features and 151-channel motion data without
 changing their embedded normalizers. The decoder uses 147 pose channels after
 the 4 contact channels. Evaluation uses 84 ordered, 1020-frame test windows;

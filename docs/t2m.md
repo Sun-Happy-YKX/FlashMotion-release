@@ -35,9 +35,9 @@ Use Linux with NVIDIA GPUs and the task-specific observed runtime inventory.
 installation recipe; `requirements/t2m.observed.20261010.lock.txt` records package versions.
 Do not install or change packages in a live training environment automatically.
 
-Download only the current main-model weights and authorized data/evaluator
-allowlists from the separate private HF repositories using immutable revisions
-and SHA/size verification; see [download instructions](published_artifacts.md).
+Download the current main-model weights from the public `FlashMotion-models`
+repository. Obtain authorized data/evaluator assets separately. Use immutable
+revisions and SHA/size verification; see [download instructions](published_artifacts.md).
 Restore data into exclusive new roots with [dataset restoration](dataset_restore.md).
 Do not extract into the Git checkout or an original live training directory.
 
@@ -63,7 +63,7 @@ evaluator files, and the verified restored raw data. Their required layout is:
   raw_data/BABEL_streamed/...
 ```
 
-The eight evaluator binaries are stored in the model repository at
+The eight evaluator binaries are stored in the restricted dependency archive at
 `t2m/evaluator/FloodDiffusion/deps/...`; they are separate from the two
 FlashMotion model checkpoints. Preserve their exact SHA256 from
 `manifests/evaluator_assets_download.json`.
